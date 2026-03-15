@@ -1,0 +1,19 @@
+packages:
+  "framer-motion": "Animations and layout transitions for a premium feel"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes"
+  "date-fns": "Date formatting and manipulation for evidence and briefs"
+  "@radix-ui/react-slot": "Primitive component for composition"
+  "@radix-ui/react-dialog": "Accessible dialogs for editing entities"
+  "@radix-ui/react-accordion": "Collapsible evidence panels"
+  "@radix-ui/react-tooltip": "Tooltips for freshness badges"
+
+images:
+  - path: "artifacts/investment-os/public/images/terminal-bg.png"
+    description: "Subtle dark mode geometric mesh grid pattern, very low opacity, deep slate and navy tones, professional financial terminal aesthetic"
+    aspect_ratio: "16:9"
+
+notes:
+  - Uses @workspace/api-client-react for generated React Query hooks
+  - Relies on strict schema types from API definition
+  - Mutations are stubbed to demonstrate full UI interaction capabilities despite only GET endpoints being defined in the OpenAPI spec
