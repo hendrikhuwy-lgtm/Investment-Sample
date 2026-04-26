@@ -1,0 +1,13 @@
+# ETF Factsheet Fixture for CMOD
+# Source: https://www.invesco.com/content/dam/invesco/emea/en/product-documents/etf/share-class/factsheet/IE00BD6FTQ80_factsheet_en.pdf
+# Retrieved: 2026-03-02T16:30:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00BD6FTQ80
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+
+ISIN: IE00BD6FTQ80
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.19%
+Fund Facts as at: 31 January 2026

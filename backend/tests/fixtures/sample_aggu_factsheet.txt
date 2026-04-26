@@ -1,0 +1,13 @@
+# ETF Factsheet Fixture for AGGU
+# Source: https://www.ishares.com/uk/individual/en/literature/fact-sheet/aggu-ishares-core-global-aggregate-bond-ucits-etf-fund-fact-sheet-en-gb.pdf
+# Retrieved: 2026-03-02T16:00:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00BZ043R46
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+
+ISIN: IE00BZ043R46
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.10%
+Fund Facts as at: 31 January 2026

@@ -1,0 +1,15 @@
+# ETF Factsheet Fixture for VWRL
+# Source: https://fund-docs.vanguard.com/FTSE_All-World_UCITS_ETF_USD_Distributing_9505_EU_INT_UK_EN.pdf
+# Retrieved: 2026-03-02T17:00:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00B3RBWM25
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is the DISTRIBUTING version of VWRA (which is Accumulating)
+
+ISIN: IE00B3RBWM25
+Fund Domicile: Ireland
+Share Class: Distributing
+Ongoing Charges: 0.19%
+Fund Facts as at: 31 January 2026

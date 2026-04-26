@@ -1,0 +1,52 @@
+{
+  "contract_version": "0.2.0",
+  "surface_id": "daily_brief",
+  "generated_at": "2026-04-01T00:00:00+00:00",
+  "freshness_state": "stored_valid_context",
+  "what_changed": [
+    {
+      "signal_id": "signal_macro_global_inflation",
+      "label": "Global inflation breadth remains sticky",
+      "signal_kind": "macro",
+      "direction": "up",
+      "magnitude": "significant",
+      "summary": "Inflation breadth remains above recent trend, which keeps real-rate sensitivity and duration pressure in view.",
+      "implication": "This matters economically because persistent inflation can keep policy rates restrictive and reduce the margin for a clean duration rally.",
+      "confidence": "medium",
+      "as_of": "2026-04-01T00:00:00+00:00"
+    },
+    {
+      "signal_id": "signal_macro_credit_spreads",
+      "label": "Credit spreads widened modestly",
+      "signal_kind": "macro",
+      "direction": "down",
+      "magnitude": "moderate",
+      "summary": "Credit spreads widened modestly over the last week, which is a mild risk-off signal rather than a break in market functioning.",
+      "implication": "This matters economically because wider spreads can tighten financing conditions and weaken the case for taking incremental cyclical risk.",
+      "confidence": "medium",
+      "as_of": "2026-04-01T00:00:00+00:00"
+    },
+    {
+      "signal_id": "signal_macro_usd_strength",
+      "label": "US dollar strength returned",
+      "signal_kind": "macro",
+      "direction": "up",
+      "magnitude": "moderate",
+      "summary": "The US dollar strengthened again, which can tighten global liquidity conditions and weigh on externally funded risk assets.",
+      "implication": "This matters economically because dollar strength often travels with tighter financial conditions and a firmer hurdle for broad risk appetite.",
+      "confidence": "low",
+      "as_of": "2026-04-01T00:00:00+00:00"
+    }
+  ],
+  "why_it_matters_economically": "The current mix points to tighter financial conditions rather than a clean pro-growth impulse, so portfolio language should emphasize transmission, funding conditions, and downside ballast instead of a single-factor market story.",
+  "why_it_matters_here": "Across the current sleeve set, the read is to keep growth-sensitive exposure in review while preserving room for ballast and liquidity sleeves to do their job if the macro pulse stays firm.",
+  "review_posture": "review: Doctrine restraints are present, so manual review remains required.",
+  "what_confirms_or_breaks": "More direct evidence on inflation cooling would soften the current caution. Further spread widening or another leg higher in the dollar would confirm the tighter-conditions read.",
+  "evidence_and_trust": {
+    "freshness_state": "stored_valid_context",
+    "source_count": 2,
+    "completeness_score": 0.86
+  },
+  "portfolio_overlay": null,
+  "holdings_overlay_present": false
+}

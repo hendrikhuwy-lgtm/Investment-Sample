@@ -1,0 +1,27 @@
+# ETF Factsheet Fixture for EIMI
+# Source: https://www.ishares.com/uk/individual/en/literature/fact-sheet/eimi-ishares-core-msci-em-imi-ucits-etf-fund-fact-sheet-en-gb.pdf
+# Retrieved: 2026-03-02T14:30:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00BKM4GZ66
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+
+ISIN: IE00BKM4GZ66
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.18%
+Fund Facts as at: 31 January 2026
+Share Class Launch Date : 30-May-2014
+Share Class Currency : USD
+Net Assets of Share Class (M) : 39,654.56 USD
+Benchmark : MSCI Emerging Markets Investable Market Index (USD) (Net)
+Fund Launch Date : 30-May-2014
+Net Assets of Fund (M) : 41,352.75 USD
+Methodology : Replicated
+Product Structure : Physical
+CUMULATIVE & ANNUALISED PERFORMANCE
+CUMULATIVE (%) ANNUALISED (% p.a.)
+1m 3m 6m YTD 1y 3y 5y Since Inception
+Share Class 5.33 17.56 26.99 14.47 48.85 21.23 6.73 6.42
+Benchmark 5.32 17.52 27.01 14.43 48.59 21.13 6.66 6.45
+Source: BlackRock

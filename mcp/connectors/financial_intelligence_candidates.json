@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Finnhub Market Data",
+    "provider_name": "finnhub",
+    "publisher": "Finnhub",
+    "category": "market_data",
+    "priority": "high",
+    "importance_note": "Primary live quote and news connector for investor-facing market and signal surfaces.",
+    "required_env": ["FINNHUB_API_KEY"],
+    "allow_missing_env": false,
+    "requires_adapter": true,
+    "supported_families": ["quote_latest", "fx", "reference_meta", "news_general"],
+    "default_identifiers": {
+      "quote_latest": "AAPL",
+      "fx": "USD/SGD",
+      "reference_meta": "AAPL",
+      "news_general": "general?limit=5"
+    }
+  },
+  {
+    "name": "Nasdaq Data Link Research",
+    "provider_name": "nasdaq_data_link",
+    "publisher": "Nasdaq Data Link",
+    "category": "research_data",
+    "priority": "high",
+    "importance_note": "Research dataset connector for ETF and structural reference datasets where entitlement is available.",
+    "required_env": ["NASDAQ_DATA_LINK_API_KEY"],
+    "allow_missing_env": false,
+    "requires_adapter": true,
+    "supported_families": ["research_dataset"],
+    "default_identifiers": {
+      "research_dataset": "ETFG/FUND?ticker=SPY"
+    }
+  }
+]

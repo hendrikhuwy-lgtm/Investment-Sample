@@ -1,0 +1,13 @@
+# ETF Factsheet Fixture for VFEA
+# Source: https://fund-docs.vanguard.com/FTSE_Emerging_Markets_UCITS_ETF_USD_Accumulating_9678_EU_INT_UK_EN.pdf
+# Retrieved: 2026-03-02T16:30:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00BK5BR733
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+
+ISIN: IE00BK5BR733
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.17%
+Fund Facts as at: 31 January 2026

@@ -1,0 +1,15 @@
+# ETF Factsheet Fixture for CAOS
+# Source: https://alphaarchitect.com/wp-content/uploads/compliance/etf/factsheets/Factsheet_CAOS.pdf
+# Retrieved: 2026-03-02T17:00:00Z
+# Verified via: https://funds.alphaarchitect.com/caos/
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is a US ETF - uses CUSIP identifier, not ISIN
+
+CUSIP: 02072C200
+Fund Domicile: United States
+Share Class: Distributing
+Ongoing Charges: 0.63%
+Fund Facts as at: 31 January 2026

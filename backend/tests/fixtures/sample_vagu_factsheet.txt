@@ -1,0 +1,13 @@
+# ETF Factsheet Fixture for VAGU
+# Source: https://fund-docs.vanguard.com/Global_Aggregate_Bond_UCITS_ETF_USD_Hedged_Accumulating_9600_CB_INT_EN.pdf
+# Retrieved: 2026-03-02T16:30:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00BG47KJ78
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+
+ISIN: IE00BG47KJ78
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.08%
+Fund Facts as at: 31 January 2026

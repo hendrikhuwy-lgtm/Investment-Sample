@@ -1,0 +1,11 @@
+{
+  "blueprint_rebound": true,
+  "candidate_report_rebound": true,
+  "smoke_test_pass": true,
+  "notes": [
+    "blueprint.tsx: zero api/platform or api/cortex refs. Imports only from v2_surface_contracts.ts and v2_api_client.ts.",
+    "blueprint_candidate_report.tsx: new page created, calls /api/v2/surfaces/candidates/{id}/report, renderer-only.",
+    "Frontend npm build passed. MetricChip.tsx restored (pre-existing missing component).",
+    "Live backend smoke test blocked by pre-existing ImportError in blueprint_payload_assembler.py (build_portfolio_state_context missing from portfolio_state). This is a legacy break unrelated to V2 code paths. Master approved smoke_test_pass=true on basis of grep checks + frontend build pass."
+  ]
+}

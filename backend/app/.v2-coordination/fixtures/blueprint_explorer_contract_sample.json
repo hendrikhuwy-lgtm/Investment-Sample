@@ -1,0 +1,47 @@
+{
+  "contract_version": "0.2.0",
+  "generated_at": "2026-04-01T00:00:00+00:00",
+  "surface_id": "blueprint_explorer",
+  "freshness_state": "stored_valid_context",
+  "holdings_overlay_present": false,
+  "sleeves": [
+    {
+      "sleeve_id": "sleeve_global_equity_core",
+      "sleeve_name": "Global Equity Core",
+      "candidate_count": 4,
+      "lead_candidate_id": "candidate_instrument_vwra",
+      "lead_symbol": "VWRA",
+      "review_posture": "review_soon",
+      "summary": "Broad global equity exposure still reads as the cleanest core implementation, but benchmark and implementation comparisons remain worth rechecking."
+    },
+    {
+      "sleeve_id": "sleeve_developed_ex_us_optional",
+      "sleeve_name": "Developed ex-US Optional",
+      "candidate_count": 3,
+      "lead_candidate_id": "candidate_instrument_ixus",
+      "lead_symbol": "IXUS",
+      "review_posture": "monitor",
+      "summary": "Developed ex-US exposure remains optional rather than urgent, so the sleeve can stay in monitor mode while relative cost and tax posture are watched."
+    },
+    {
+      "sleeve_id": "sleeve_emerging_markets",
+      "sleeve_name": "Emerging Markets",
+      "candidate_count": 3,
+      "lead_candidate_id": "candidate_instrument_eimi",
+      "lead_symbol": "EIMI",
+      "review_posture": "review_soon",
+      "summary": "Emerging markets still add diversification potential, but macro sensitivity and implementation differences keep the sleeve in active review."
+    },
+    {
+      "sleeve_id": "sleeve_ig_bonds",
+      "sleeve_name": "Investment Grade Bonds",
+      "candidate_count": 2,
+      "lead_candidate_id": "candidate_instrument_aggu",
+      "lead_symbol": "AGGU",
+      "review_posture": "monitor",
+      "summary": "Investment-grade bonds continue to serve as ballast, and no urgent sleeve-level change is implied by the current context."
+    }
+  ],
+  "market_state_summary": "Recent market moves are meaningful enough to justify another review pass, but not strong enough on their own to force a sleeve rotation. The current read is to prioritize context, evidence depth, and fit before any action language strengthens.",
+  "review_posture": "review_soon"
+}

@@ -1,0 +1,45 @@
+type Brand<T, Name extends string> = T & { readonly __brand: Name };
+
+export type InstrumentId = Brand<string, 'InstrumentId'>;
+export type MarketSeriesId = Brand<string, 'MarketSeriesId'>;
+export type BenchmarkId = Brand<string, 'BenchmarkId'>;
+export type MacroId = Brand<string, 'MacroId'>;
+export type PortfolioId = Brand<string, 'PortfolioId'>;
+export type EvidencePackId = Brand<string, 'EvidencePackId'>;
+export type SignalPacketId = Brand<string, 'SignalPacketId'>;
+export type InterpretationCardId = Brand<string, 'InterpretationCardId'>;
+export type CandidateAssessmentId = Brand<string, 'CandidateAssessmentId'>;
+export type CandidateId = CandidateAssessmentId;
+export type SleeveAssessmentId = Brand<string, 'SleeveAssessmentId'>;
+export type SleeveId = SleeveAssessmentId;
+export type CompareAssessmentId = Brand<string, 'CompareAssessmentId'>;
+export type PolicyBoundaryId = Brand<string, 'PolicyBoundaryId'>;
+export type FrameworkRestraintId = Brand<string, 'FrameworkRestraintId'>;
+export type VisibleDecisionStateId = Brand<string, 'VisibleDecisionStateId'>;
+export type ChangeEventId = Brand<string, 'ChangeEventId'>;
+export type DecisionDiffId = Brand<string, 'DecisionDiffId'>;
+export type TrustDiffId = Brand<string, 'TrustDiffId'>;
+export type SurfaceChangeSummaryId = Brand<string, 'SurfaceChangeSummaryId'>;
+
+const brand = <T extends string>(value: string) => value as Brand<string, T>;
+
+export const asInstrumentId = (value: string) => brand<'InstrumentId'>(value);
+export const asMarketSeriesId = (value: string) => brand<'MarketSeriesId'>(value);
+export const asBenchmarkId = (value: string) => brand<'BenchmarkId'>(value);
+export const asMacroId = (value: string) => brand<'MacroId'>(value);
+export const asPortfolioId = (value: string) => brand<'PortfolioId'>(value);
+export const asEvidencePackId = (value: string) => brand<'EvidencePackId'>(value);
+export const asSignalPacketId = (value: string) => brand<'SignalPacketId'>(value);
+export const asInterpretationCardId = (value: string) => brand<'InterpretationCardId'>(value);
+export const asCandidateAssessmentId = (value: string) => brand<'CandidateAssessmentId'>(value);
+export const asCandidateId = (value: string) => asCandidateAssessmentId(value);
+export const asSleeveAssessmentId = (value: string) => brand<'SleeveAssessmentId'>(value);
+export const asSleeveId = (value: string) => asSleeveAssessmentId(value);
+export const asCompareAssessmentId = (value: string) => brand<'CompareAssessmentId'>(value);
+export const asPolicyBoundaryId = (value: string) => brand<'PolicyBoundaryId'>(value);
+export const asFrameworkRestraintId = (value: string) => brand<'FrameworkRestraintId'>(value);
+export const asVisibleDecisionStateId = (value: string) => brand<'VisibleDecisionStateId'>(value);
+export const asChangeEventId = (value: string) => brand<'ChangeEventId'>(value);
+export const asDecisionDiffId = (value: string) => brand<'DecisionDiffId'>(value);
+export const asTrustDiffId = (value: string) => brand<'TrustDiffId'>(value);
+export const asSurfaceChangeSummaryId = (value: string) => brand<'SurfaceChangeSummaryId'>(value);

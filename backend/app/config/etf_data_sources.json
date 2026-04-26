@@ -1,0 +1,883 @@
+{
+  "comment": "Real ETF data source configurations - all URLs must be verified and functional",
+  "sources": [
+    {
+      "etf_symbol": "VWRA",
+      "name": "Vanguard FTSE All-World UCITS ETF (Acc)",
+      "isin": "IE00BK5BQT80",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "VWRA"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "Vanguard",
+          "method": "csv_download",
+          "url": "https://www.vanguard.co.uk/documents/portal/kiid-pdf/9679.pdf",
+          "url_holdings_csv": "https://api.vanguard.com/rs/gre/gls/1.3.0/documents/17327/gb",
+          "note": "Vanguard provides holdings via API - requires research for exact endpoint",
+          "frequency": "monthly",
+          "citation_source_id": "vanguard_vwra_holdings"
+        },
+        "factsheet": {
+          "provider": "Vanguard",
+          "method": "pdf_extract",
+          "url": "https://www.vanguard.co.uk/documents/portal/fact-sheets/etf-fact-sheet-ft-all-world-ucits-etf.pdf",
+          "frequency": "monthly",
+          "fields": [
+            "aum",
+            "tracking_difference",
+            "ter",
+            "dividend_yield"
+          ],
+          "citation_source_id": "vanguard_vwra_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/VWRA/vanguard-ftse-all-world-ucits-etf-usd-accumulating/fundamentals",
+          "note": "Requires scraping or data feed subscription",
+          "frequency": "daily",
+          "citation_source_id": "lse_vwra_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "IWDA",
+      "name": "iShares MSCI World UCITS ETF (Acc)",
+      "isin": "IE00B4L5Y983",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "IWDA"
+        },
+        {
+          "exchange": "Xetra",
+          "ticker": "EUNL"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "iShares",
+          "method": "csv_download",
+          "url_template": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund/1478358465952.ajax?fileType=csv&fileName=IWDA_holdings&dataType=fund",
+          "frequency": "daily",
+          "citation_source_id": "ishares_iwda_holdings"
+        },
+        "factsheet": {
+          "provider": "iShares",
+          "method": "api_call",
+          "url": "https://www.ishares.com/uk/individual/en/products/251882/fund-data.ajax?tab=all&fileType=json",
+          "frequency": "daily",
+          "fields": [
+            "aum",
+            "premium_discount",
+            "bid_ask_spread",
+            "tracking_difference",
+            "dividend_yield"
+          ],
+          "citation_source_id": "ishares_iwda_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/IWDA/ishares-msci-world-ucits-etf-usd-accumulating/fundamentals",
+          "frequency": "realtime",
+          "citation_source_id": "lse_iwda_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "CSPX",
+      "name": "iShares Core S&P 500 UCITS ETF (Acc)",
+      "isin": "IE00B5BMR087",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "CSPX"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "iShares",
+          "method": "csv_download",
+          "url_template": "https://www.ishares.com/uk/individual/en/products/253743/ishares-sp-500-b-ucits-etf-acc-fund/1478358465952.ajax?fileType=csv&fileName=CSPX_holdings&dataType=fund",
+          "frequency": "daily",
+          "citation_source_id": "ishares_cspx_holdings"
+        },
+        "factsheet": {
+          "provider": "iShares",
+          "method": "api_call",
+          "url": "https://www.ishares.com/uk/individual/en/products/253743/fund-data.ajax?tab=all&fileType=json",
+          "frequency": "daily",
+          "citation_source_id": "ishares_cspx_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/CSPX/ishares-sp-500-b-ucits-etf-usd-accumulating/fundamentals",
+          "frequency": "realtime",
+          "citation_source_id": "lse_cspx_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "SSAC",
+      "name": "iShares MSCI ACWI UCITS ETF (Acc)",
+      "isin": "IE00B6R52259",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "SSAC"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "iShares",
+          "method": "csv_download",
+          "url_template": "https://www.ishares.com/ch/individual/en/products/251850/ishares-msci-acwi-ucits-etf/1495092304805.ajax?dataType=fund&fileName=SSACCHF_holdings&fileType=csv",
+          "frequency": "daily",
+          "citation_source_id": "ishares_ssac_holdings"
+        },
+        "factsheet": {
+          "provider": "iShares",
+          "method": "api_call",
+          "url": "https://www.ishares.com/uk/individual/en/products/251850/fund-data.ajax?tab=all&fileType=json",
+          "frequency": "daily",
+          "citation_source_id": "ishares_ssac_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/SSAC/ishares-msci-acwi-ucits-etf/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_ssac_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "VWRL",
+      "name": "Vanguard FTSE All-World UCITS ETF (Dist)",
+      "isin": "IE00B3RBWM25",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "VWRL"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Vanguard",
+          "method": "pdf_extract",
+          "url": "https://fund-docs.vanguard.com/FTSE_All-World_UCITS_ETF_USD_Distributing_9505_EU_INT_UK_EN.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "vanguard_vwrl_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/VWRL/vanguard-ftse-all-world-ucits-etf-usd-distributing/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_vwrl_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "VEVE",
+      "name": "Vanguard FTSE Developed World UCITS ETF",
+      "isin": "IE00BKX55T58",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "VEVE"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Vanguard",
+          "method": "pdf_extract",
+          "parser_type": "vanguard_factsheet_pdf",
+          "truth_family_purpose": "identity_wrapper",
+          "url": "https://fund-docs.vanguard.com/FTSE_Developed_World_UCITS_ETF_USD_Distributing_9527_CH_RET_EN.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "vanguard_veve_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "parser_type": "market_data_api",
+          "truth_family_purpose": "liquidity_and_aum",
+          "url": "https://www.londonstockexchange.com/stock/VEVE/vanguard-ftse-developed-world-ucits-etf-usd-distributing/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_veve_market"
+        },
+        "holdings": {
+          "provider": "Vanguard",
+          "method": "html_scrape",
+          "parser_type": "vanguard_holdings_html_summary",
+          "truth_family_purpose": "holdings_exposure",
+          "url": "https://www.vanguard.co.uk/professional/product/etf/equity/9675/ftse-developed-world-ucits-etf-usd-distributing",
+          "frequency": "daily",
+          "citation_source_id": "vanguard_veve_holdings_html"
+        }
+      }
+    },
+    {
+      "etf_symbol": "EIMI",
+      "name": "iShares Core MSCI EM IMI UCITS ETF",
+      "isin": "IE00BKM4GZ66",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "EIMI"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "iShares",
+          "method": "csv_download",
+          "url_template": "https://www.ishares.com/ch/individual/en/products/264659/ishares-core-msci-em-imi-ucits-etf/1495092304805.ajax?dataType=fund&fileName=EIMI_holdings&fileType=csv",
+          "frequency": "daily",
+          "citation_source_id": "ishares_eimi_holdings"
+        },
+        "factsheet": {
+          "provider": "iShares",
+          "method": "api_call",
+          "url": "https://www.ishares.com/uk/individual/en/products/264659/fund-data.ajax?tab=all&fileType=json",
+          "frequency": "daily",
+          "citation_source_id": "ishares_eimi_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/EIMI/ishares-core-msci-em-imi-ucits-etf/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_eimi_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "VFEA",
+      "name": "Vanguard FTSE Emerging Markets UCITS ETF (Acc)",
+      "isin": "IE00BK5BR733",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "VFEA"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Vanguard",
+          "method": "pdf_extract",
+          "url": "https://fund-docs.vanguard.com/FTSE_Emerging_Markets_UCITS_ETF_USD_Accumulating_9678_EU_INT_UK_EN.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "vanguard_vfea_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/VFEA/vanguard-ftse-emerging-markets-ucits-etf-usd-accumulating/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_vfea_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "AGGU",
+      "name": "iShares Core Global Aggregate Bond UCITS ETF",
+      "isin": "IE00BZ043R46",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "AGGU"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "iShares",
+          "method": "csv_download",
+          "url_template": "https://www.ishares.com/ch/individual/en/products/291773/ishares-core-global-aggregate-bond-ucits-etf/1495092304805.ajax?dataType=fund&fileName=AGGU_holdings&fileType=csv",
+          "frequency": "daily",
+          "citation_source_id": "ishares_aggu_holdings"
+        },
+        "factsheet": {
+          "provider": "iShares",
+          "method": "api_call",
+          "url": "https://www.ishares.com/uk/individual/en/products/291773/fund-data.ajax?tab=all&fileType=json",
+          "frequency": "daily",
+          "citation_source_id": "ishares_aggu_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/AGGU/ishares-core-global-aggregate-bond-ucits-etf/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_aggu_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "IB01",
+      "name": "iShares $ Treasury Bond 0-1yr UCITS ETF",
+      "isin": "IE00BGSF1X88",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "IB01"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "iShares",
+          "method": "csv_download",
+          "url_template": "https://www.ishares.com/ch/individual/en/products/307243/ishares-treasury-bond-0-1yr-ucits-etf/1495092304805.ajax?dataType=fund&fileName=IB01_holdings&fileType=csv",
+          "frequency": "daily",
+          "citation_source_id": "ishares_ib01_holdings"
+        },
+        "factsheet": {
+          "provider": "iShares",
+          "method": "api_call",
+          "url": "https://www.ishares.com/uk/individual/en/products/307243/fund-data.ajax?tab=all&fileType=json",
+          "frequency": "daily",
+          "citation_source_id": "ishares_ib01_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/IB01/ishares-treasury-bond-0-1yr-ucits-etf/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_ib01_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "VAGU",
+      "name": "Vanguard Global Aggregate Bond UCITS ETF (USD Hedged Acc)",
+      "isin": "IE00BG47KJ78",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "VAGU"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Vanguard",
+          "method": "pdf_extract",
+          "parser_type": "vanguard_factsheet_pdf",
+          "truth_family_purpose": "identity_wrapper",
+          "url": "https://fund-docs.vanguard.com/Global_Aggregate_Bond_UCITS_ETF_USD_Hedged_Accumulating_9600_CB_INT_EN.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "vanguard_vagu_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "parser_type": "market_data_api",
+          "truth_family_purpose": "liquidity_and_aum",
+          "url": "https://www.londonstockexchange.com/stock/VAGU/vanguard-global-aggregate-bond-ucits-etf-usd-hedged-accumulating/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_vagu_market"
+        },
+        "holdings": {
+          "provider": "Vanguard",
+          "method": "html_scrape",
+          "parser_type": "vanguard_holdings_html_summary",
+          "truth_family_purpose": "holdings_exposure",
+          "url": "https://www.vanguard.co.uk/professional/product/etf/bond/9600/global-aggregate-bond-ucits-etf-usd-hedged-accumulating",
+          "frequency": "daily",
+          "citation_source_id": "vanguard_vagu_holdings_html"
+        }
+      }
+    },
+    {
+      "etf_symbol": "A35",
+      "name": "ABF Singapore Bond Index Fund",
+      "isin": "SG1S05002393",
+      "listings": [
+        {
+          "exchange": "SGX",
+          "ticker": "A35"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Amova",
+          "method": "html_scrape",
+          "parser_type": "issuer_factsheet_html",
+          "truth_family_purpose": "identity_wrapper",
+          "url": "https://sg.amova-am.com/general/funds/detail/abf-singapore-bond-index-fund",
+          "frequency": "daily",
+          "citation_source_id": "amova_a35_factsheet"
+        },
+        "market_data": {
+          "provider": "SGX",
+          "method": "api_call",
+          "parser_type": "sgx_market_stub_not_implemented",
+          "truth_family_purpose": "liquidity_and_aum",
+          "url": "https://www.sgx.com/securities/securities-prices?code=A35",
+          "frequency": "daily",
+          "citation_source_id": "sgx_a35_market"
+        },
+        "holdings": {
+          "provider": "Amova",
+          "method": "html_scrape",
+          "parser_type": "amova_holdings_html_summary",
+          "truth_family_purpose": "holdings_exposure",
+          "url": "https://sg.amova-am.com/general/funds/detail/abf-singapore-bond-index-fund",
+          "frequency": "daily",
+          "citation_source_id": "amova_a35_holdings_html"
+        }
+      }
+    },
+    {
+      "etf_symbol": "ES3.SI",
+      "name": "Nikko AM STI ETF",
+      "isin": "SG1L01001701",
+      "listings": [
+        {
+          "exchange": "SGX",
+          "ticker": "ES3"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "Nikko AM",
+          "method": "pdf_extract",
+          "url": "https://www.nikkoam.com.sg/files/factsheets/NIKKO-AM-STI-ETF.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "nikko_es3_holdings"
+        },
+        "factsheet": {
+          "provider": "Nikko AM",
+          "method": "pdf_extract",
+          "url": "https://www.nikkoam.com.sg/files/factsheets/NIKKO-AM-STI-ETF.pdf",
+          "frequency": "monthly",
+          "fields": [
+            "aum",
+            "tracking_error",
+            "dividend_yield"
+          ],
+          "citation_source_id": "nikko_es3_factsheet"
+        },
+        "market_data": {
+          "provider": "SGX",
+          "method": "html_scrape",
+          "url": "https://www.sgx.com/securities/securities-prices?code=ES3",
+          "frequency": "realtime",
+          "citation_source_id": "sgx_es3_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "HMCH",
+      "name": "HSBC MSCI China UCITS ETF",
+      "isin": "IE00B44T3H88",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "HMCH"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "HSBC Asset Management",
+          "method": "pdf_extract",
+          "parser_type": "hsbc_factsheet_pdf",
+          "truth_family_purpose": "identity_wrapper",
+          "url": "https://www.assetmanagement.hsbc.nl/api/v1/download/document/ie00b44t3h88/nl/en/factsheet",
+          "frequency": "monthly",
+          "citation_source_id": "hsbc_hmch_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "parser_type": "market_data_api",
+          "truth_family_purpose": "liquidity_and_aum",
+          "url": "https://www.londonstockexchange.com/stock/HMCH/hsbc-msci-china-ucits-etf/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_hmch_market"
+        },
+        "holdings": {
+          "provider": "HSBC Asset Management",
+          "method": "pdf_extract",
+          "parser_type": "hsbc_holdings_pdf_summary",
+          "truth_family_purpose": "holdings_exposure",
+          "url": "https://www.assetmanagement.hsbc.nl/api/v1/download/document/ie00b44t3h88/nl/en/factsheet",
+          "frequency": "monthly",
+          "citation_source_id": "hsbc_hmch_holdings_summary"
+        }
+      }
+    },
+    {
+      "etf_symbol": "XCHA",
+      "name": "Xtrackers MSCI China UCITS ETF 1C",
+      "isin": "LU0514695690",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "XCHA"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "DWS Xtrackers",
+          "method": "pdf_extract",
+          "parser_type": "xtrackers_factsheet_pdf",
+          "truth_family_purpose": "identity_wrapper",
+          "url": "https://etf.dws.com/LUX/ENG/Download/Factsheet/LU0514695690/-/MSCI-China-UCITS-ETF",
+          "frequency": "monthly",
+          "citation_source_id": "xtrackers_china_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "parser_type": "market_data_api",
+          "truth_family_purpose": "liquidity_and_aum",
+          "url": "https://www.londonstockexchange.com/stock/XCHA/xtrackers-msci-china-ucits-etf-1c/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_xcha_market"
+        },
+        "holdings": {
+          "provider": "DWS Xtrackers",
+          "method": "html_scrape",
+          "parser_type": "xtrackers_holdings_html_summary",
+          "truth_family_purpose": "holdings_exposure",
+          "url": "https://etf.dws.com/en-gb/LU0514695690-msci-china-ucits-etf-1c/",
+          "frequency": "daily",
+          "citation_source_id": "xtrackers_xcha_holdings_html"
+        }
+      }
+    },
+    {
+      "etf_symbol": "SGLN",
+      "name": "iShares Physical Gold ETC",
+      "isin": "IE00B4ND3602",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "SGLN"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "iShares",
+          "method": "html_scrape",
+          "parser_type": "issuer_factsheet_html",
+          "truth_family_purpose": "identity_wrapper",
+          "url": "https://www.ishares.com/uk/individual/en/products/258441/ishares-physical-gold-etc",
+          "frequency": "daily",
+          "citation_source_id": "ishares_sgln_factsheet_html"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "parser_type": "market_data_api",
+          "truth_family_purpose": "liquidity_and_aum",
+          "url": "https://www.londonstockexchange.com/stock/SGLN/ishares-physical-gold-etc/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_sgln_market"
+        },
+        "holdings": {
+          "provider": "iShares",
+          "method": "html_scrape",
+          "parser_type": "issuer_holdings_html_summary",
+          "truth_family_purpose": "holdings_exposure",
+          "url": "https://www.ishares.com/uk/individual/en/products/258441/ishares-physical-gold-etc",
+          "frequency": "daily",
+          "citation_source_id": "ishares_sgln_holdings_html"
+        }
+      }
+    },
+    {
+      "etf_symbol": "CMOD",
+      "name": "Invesco Bloomberg Commodity UCITS ETF",
+      "isin": "IE00BD6FTQ80",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "CMOD"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Invesco",
+          "method": "pdf_extract",
+          "url": "https://www.invesco.com/content/dam/invesco/emea/en/product-documents/etf/share-class/factsheet/IE00BD6FTQ80_factsheet_en.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "invesco_cmod_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/CMOD/invesco-bloomberg-commodity-ucits-etf/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_cmod_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "IWDP",
+      "name": "iShares Developed Markets Property Yield UCITS ETF",
+      "isin": "IE00B1FZS350",
+      "listings": [
+        {
+          "exchange": "LSE",
+          "ticker": "IWDP"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "iShares",
+          "method": "pdf_extract",
+          "url": "https://www.ishares.com/uk/professional/en/products/251801/ishares-developed-markets-property-yield-ucits-etf",
+          "frequency": "daily",
+          "citation_source_id": "ishares_iwdp_factsheet"
+        },
+        "market_data": {
+          "provider": "LSE",
+          "method": "api_call",
+          "url": "https://www.londonstockexchange.com/stock/IWDP/ishares-developed-markets-property-yield-ucits-etf/fundamentals",
+          "frequency": "daily",
+          "citation_source_id": "lse_iwdp_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "DBMF",
+      "name": "iMGP DBi Managed Futures Strategy ETF",
+      "isin": "US44931J1097",
+      "listings": [
+        {
+          "exchange": "NYSEARCA",
+          "ticker": "DBMF"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Natixis IM",
+          "method": "pdf_extract",
+          "url": "https://imgpfunds.com/wp-content/uploads/pdfs/holdings/DBMF_FACTSHEETS_EN.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "dbmf_factsheet"
+        },
+        "market_data": {
+          "provider": "NYSE Arca",
+          "method": "api_call",
+          "url": "https://www.im.natixis.com/en-us/etf/dbmf",
+          "frequency": "daily",
+          "citation_source_id": "dbmf_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "KMLM",
+      "name": "KFA Mount Lucas Managed Futures Index Strategy ETF",
+      "isin": "US5007674052",
+      "listings": [
+        {
+          "exchange": "NYSEARCA",
+          "ticker": "KMLM"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "KFA Funds",
+          "method": "html_scrape",
+          "url": "https://kfafunds.com/kmlm/",
+          "frequency": "daily",
+          "citation_source_id": "kmlm_factsheet"
+        },
+        "market_data": {
+          "provider": "NYSE Arca",
+          "method": "api_call",
+          "url": "https://kfafunds.com/kmlm/",
+          "frequency": "daily",
+          "citation_source_id": "kmlm_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "TAIL",
+      "name": "Cambria Tail Risk ETF",
+      "isin": "US1320618622",
+      "listings": [
+        {
+          "exchange": "CBOE",
+          "ticker": "TAIL"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Cambria",
+          "method": "html_scrape",
+          "url": "https://www.cambriafunds.com/tail",
+          "frequency": "daily",
+          "citation_source_id": "tail_factsheet"
+        },
+        "market_data": {
+          "provider": "Cboe",
+          "method": "api_call",
+          "url": "https://www.cambriafunds.com/tail",
+          "frequency": "daily",
+          "citation_source_id": "tail_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "CAOS",
+      "name": "Alpha Architect Tail Risk ETF",
+      "isin": "US02072C2008",
+      "listings": [
+        {
+          "exchange": "NYSEARCA",
+          "ticker": "CAOS"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "Alpha Architect",
+          "method": "pdf_extract",
+          "url": "https://alphaarchitect.com/wp-content/uploads/compliance/etf/factsheets/Factsheet_CAOS.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "caos_factsheet"
+        },
+        "market_data": {
+          "provider": "NYSE Arca",
+          "method": "api_call",
+          "url": "https://funds.alphaarchitect.com/caos/",
+          "frequency": "daily",
+          "citation_source_id": "caos_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "BIL",
+      "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+      "isin": "US78468R6633",
+      "listings": [
+        {
+          "exchange": "NYSEARCA",
+          "ticker": "BIL"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "State Street SPDR",
+          "method": "pdf_extract",
+          "parser_type": "ssga_factsheet_pdf",
+          "truth_family_purpose": "identity_wrapper",
+          "url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-bil.pdf",
+          "frequency": "monthly",
+          "citation_source_id": "spdr_bil_factsheet"
+        },
+        "market_data": {
+          "provider": "NYSE Arca",
+          "method": "api_call",
+          "parser_type": "market_data_api",
+          "truth_family_purpose": "liquidity_and_aum",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-bloomberg-1-3-month-t-bill-etf-bil",
+          "frequency": "daily",
+          "citation_source_id": "spdr_bil_market"
+        },
+        "holdings": {
+          "provider": "State Street SPDR",
+          "method": "html_scrape",
+          "parser_type": "ssga_holdings_html_summary",
+          "truth_family_purpose": "holdings_exposure",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-bloomberg-1-3-month-t-bill-etf-bil",
+          "frequency": "daily",
+          "citation_source_id": "spdr_bil_holdings_html"
+        }
+      }
+    },
+    {
+      "etf_symbol": "SGOV",
+      "name": "iShares 0-3 Month Treasury Bond ETF",
+      "listings": [
+        {
+          "exchange": "NYSEARCA",
+          "ticker": "SGOV"
+        }
+      ],
+      "data_sources": {
+        "holdings": {
+          "provider": "iShares",
+          "method": "csv_download",
+          "url_template": "https://www.ishares.com/us/products/314116/fund/1467271812596.ajax?fileType=csv&fileName=SGOV_holdings&dataType=fund",
+          "frequency": "daily",
+          "citation_source_id": "ishares_sgov_holdings"
+        },
+        "factsheet": {
+          "provider": "iShares",
+          "method": "pdf_extract",
+          "url": "https://www.ishares.com/us/literature/fact-sheet/sgov-ishares-0-3-month-treasury-bond-etf-fund-fact-sheet-en-us.pdf",
+          "frequency": "daily",
+          "citation_source_id": "ishares_sgov_factsheet"
+        },
+        "market_data": {
+          "provider": "NYSE Arca",
+          "method": "api_call",
+          "url": "https://www.ishares.com/us/products/314116/ishares-0-3-month-treasury-bond-etf",
+          "frequency": "daily",
+          "citation_source_id": "ishares_sgov_market"
+        }
+      }
+    },
+    {
+      "etf_symbol": "BILS",
+      "name": "SPDR Bloomberg 3-12 Month T-Bill ETF",
+      "listings": [
+        {
+          "exchange": "NYSEARCA",
+          "ticker": "BILS"
+        }
+      ],
+      "data_sources": {
+        "factsheet": {
+          "provider": "State Street SPDR",
+          "method": "pdf_extract",
+          "parser_type": "ssga_factsheet_pdf",
+          "truth_family_purpose": "identity_wrapper",
+          "url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-bils.pdf",
+          "frequency": "daily",
+          "citation_source_id": "spdr_bils_factsheet"
+        },
+        "market_data": {
+          "provider": "NYSE Arca",
+          "method": "api_call",
+          "parser_type": "market_data_api",
+          "truth_family_purpose": "liquidity_and_aum",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-bloomberg-3-12-month-t-bill-etf-bils",
+          "frequency": "daily",
+          "citation_source_id": "spdr_bils_market"
+        },
+        "holdings": {
+          "provider": "State Street SPDR",
+          "method": "html_scrape",
+          "parser_type": "ssga_holdings_html_summary",
+          "truth_family_purpose": "holdings_exposure",
+          "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-bloomberg-3-12-month-t-bill-etf-bils",
+          "frequency": "daily",
+          "citation_source_id": "spdr_bils_holdings_html"
+        }
+      }
+    }
+  ],
+  "implementation_notes": {
+    "vanguard": "Vanguard UK/EU provides PDF factsheets monthly. Holdings may require API integration or PDF parsing.",
+    "ishares": "iShares provides robust JSON APIs for holdings and fund data. Best data availability.",
+    "nikko": "Nikko AM Singapore publishes monthly PDF factsheets with holdings breakdown.",
+    "sgx": "SGX public pages provide delayed quotes. Real-time requires subscription to SGX data feed.",
+    "lse": "London Stock Exchange provides fundamentals page. Scraping required for spreads/volume."
+  },
+  "priority_implementation_order": [
+    "1. iShares API (best data quality, JSON format)",
+    "2. SGX scraping (for Singapore-listed ETFs)",
+    "3. Vanguard PDF parsing (fallback for holdings)",
+    "4. LSE scraping (market data for LSE-listed)"
+  ]
+}

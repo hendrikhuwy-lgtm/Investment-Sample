@@ -1,0 +1,52 @@
+Vanguard FTSE All-World UCITS ETF (USD) Accumulating
+
+FUND FACTS AS AT 28 FEBRUARY 2026
+
+Share class details
+ISIN: IE00BK5BQT80
+SEDOL: BK5BQT8
+Ticker: VWRA
+Exchange: London Stock Exchange
+Listing date: 22 May 2019
+
+Fund details
+Fund name: Vanguard FTSE All-World UCITS ETF
+Domicile: Ireland
+Legal structure: UCITS V ICAV
+Inception date: 22 May 2019
+Base currency: USD
+Dividend treatment: Accumulating
+
+Costs and charges
+Ongoing Charges Figure (OCF): 0.22%
+Total Expense Ratio: 0.22% per annum
+Transaction costs: 0.01%
+
+Fund size
+Net assets: $20.5 billion USD
+
+Investment objective
+The Fund employs a passive management strategy and seeks to track the performance
+of the FTSE All-World Index. The Index is a market-capitalisation weighted index
+representing the performance of large- and mid-cap stocks in both developed and
+emerging markets.
+
+Index information
+Index provider: FTSE Russell
+Number of stocks: 3,756
+Replication: Physical - full replication
+
+Benchmark Performance
+1 year tracking difference: -0.08%
+3 year tracking difference: -0.09%
+Since inception tracking difference: -0.10%
+
+Risk information
+Risk rating (SRRI): 6 out of 7
+
+Fund manager
+Investment manager: Vanguard Group (Ireland) Limited
+Investment adviser: Vanguard Investments UK, Limited
+
+This is a marketing communication.
+

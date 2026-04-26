@@ -1,0 +1,74 @@
+{
+  "contract_version": "0.1.0",
+  "surface_id": "portfolio",
+  "generated_at": "2026-04-01T08:20:00+00:00",
+  "freshness_state": "current",
+  "account_id": "default",
+  "mandate_state": "drifted",
+  "what_matters_now": "Portfolio drift needs attention because Global Equity is 8.00 percentage points from target. GLOBAL_EQUITY market context is up; the 1-day move is 8.00%.",
+  "action_posture": "review_now",
+  "sleeve_drift_summary": [
+    {
+      "sleeve_id": "global_equity",
+      "current_pct": 58.0,
+      "target_pct": 50.0,
+      "drift_pct": 8.0,
+      "status": "off_target"
+    },
+    {
+      "sleeve_id": "ig_bond",
+      "current_pct": 22.0,
+      "target_pct": 20.0,
+      "drift_pct": 2.0,
+      "status": "needs_review"
+    },
+    {
+      "sleeve_id": "real_asset",
+      "current_pct": 12.0,
+      "target_pct": 10.0,
+      "drift_pct": 2.0,
+      "status": "needs_review"
+    }
+  ],
+  "blueprint_consequence": "Portfolio drift now matters because Global Equity is 8.00 points off target, so blueprint review should stay live until weights normalize.",
+  "daily_brief_consequence": "Macro context needs attention because 10-year treasury constant maturity rate latest observation. That can change the read on Investment-Grade Bonds holdings even before the target bands move.",
+  "holdings_overlay_present": true,
+  "holdings_overlay": [
+    {
+      "holding_id": "holding_iwda",
+      "symbol": "IWDA",
+      "name": "iShares Core MSCI World UCITS ETF",
+      "quantity": 12.0,
+      "cost_basis": 100.0,
+      "currency": "USD",
+      "sleeve": "global_equity",
+      "account_type": "broker",
+      "created_at": "2026-04-01T08:19:57.486324Z",
+      "updated_at": "2026-04-01T08:19:57.486324Z"
+    },
+    {
+      "holding_id": "holding_aggu",
+      "symbol": "AGGU",
+      "name": "iShares Core Global Aggregate Bond UCITS ETF",
+      "quantity": 10.0,
+      "cost_basis": 80.0,
+      "currency": "USD",
+      "sleeve": "ig_bond",
+      "account_type": "broker",
+      "created_at": "2026-04-01T08:19:57.486641Z",
+      "updated_at": "2026-04-01T08:19:57.486641Z"
+    },
+    {
+      "holding_id": "holding_sgln",
+      "symbol": "SGLN",
+      "name": "iShares Physical Gold ETC",
+      "quantity": 2.0,
+      "cost_basis": 250.0,
+      "currency": "USD",
+      "sleeve": "real_asset",
+      "account_type": "broker",
+      "created_at": "2026-04-01T08:19:57.486767Z",
+      "updated_at": "2026-04-01T08:19:57.486767Z"
+    }
+  ]
+}

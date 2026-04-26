@@ -1,0 +1,15 @@
+# ETF Factsheet Fixture for SGLN
+# Source: https://www.ishares.com/uk/individual/en/literature/fact-sheet/sgln-ishares-physical-gold-etc-fund-fact-sheet-en-gb.pdf
+# Retrieved: 2026-03-02T16:00:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00B4ND3602
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is a physically-backed gold ETC, not a standard ETF
+
+ISIN: IE00B4ND3602
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.12%
+Fund Facts as at: 26 February 2026

@@ -1,0 +1,28 @@
+# ETF Factsheet Fixture for XCHA
+# Source: https://etf.dws.com/LUX/ENG/Download/Factsheet/LU0514695690/-/MSCI-China-UCITS-ETF
+# Retrieved: 2026-03-02T16:30:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=LU0514695690
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# CRITICAL: Domicile is Luxembourg (LU), not Ireland (IE)
+
+ISIN: LU0514695690
+Fund Domicile: Luxembourg
+Share Class: Accumulating
+Ongoing Charges: 0.65%
+Fund Facts as at: 30 January 2026
+This factsheet is as of february 27, 2026 unless otherwise specified
+Xtrackers MSCI China UCITS ETF 1C
+Share class currency USD
+Fund Currency USD
+Fund launch date 24/06/2010
+Share class launch date 24/06/2010
+Portfolio Methodology Direct Replication (physically)
+All-in fee 0.65% p.a.
+Income treatment Capitalizing
+NAV per Share USD 20.14
+Total Fund Assets USD 2.20 Billion
+London Stock Exchange XCS6 LN XCS6.L USD
+Index name MSCI CHINA TRN INDEX

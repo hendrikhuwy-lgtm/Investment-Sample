@@ -1,0 +1,7 @@
+{
+  "blueprint_audited": true,
+  "candidate_report_audited": true,
+  "daily_brief_audited": true,
+  "portfolio_audited": true,
+  "notes": "Gate updated by master. Audit doc complete. Key findings: blueprint.tsx on /api/platform/*; candidate_report page absent (component-only); daily_brief and portfolio do multi-endpoint page joins; sleeve_key/symbol used instead of sleeve_id/candidate_id."
+}

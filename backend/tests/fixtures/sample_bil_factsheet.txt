@@ -1,0 +1,15 @@
+# ETF Factsheet Fixture for BIL
+# Source: https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-bil.pdf
+# Retrieved: 2026-03-02T14:30:00Z
+# Verified via: https://cbonds.com/etf/2181/
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is a US ETF - uses CUSIP identifier, not ISIN
+
+CUSIP: 78468R703
+Fund Domicile: United States
+Share Class: Accumulating
+Ongoing Charges: 0.14%
+Fund Facts as at: 26 February 2026
