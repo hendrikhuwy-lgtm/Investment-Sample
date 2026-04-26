@@ -1,0 +1,15 @@
+# ETF Factsheet Fixture for TAIL
+# Source: https://cambriafunds.com/tail
+# Retrieved: 2026-03-02T17:00:00Z
+# Verified via: https://www.morningstar.com/etfs/bats/tail/quote
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is a US ETF - uses CUSIP identifier, not ISIN
+
+CUSIP: 132061862
+Fund Domicile: United States
+Share Class: Distributing
+Ongoing Charges: 0.59%
+Fund Facts as at: 31 January 2026

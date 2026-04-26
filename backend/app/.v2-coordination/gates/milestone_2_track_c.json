@@ -1,0 +1,4 @@
+{
+  "contract_validation_done": true,
+  "notes": "Validation found missing Track B exports for V2ContractBase, BlueprintExplorerContract, and CandidateReportContract; fixture base fields surface_id, freshness_state, and holdings_overlay_present are not represented in shared/v2_surface_contracts.ts."
+}

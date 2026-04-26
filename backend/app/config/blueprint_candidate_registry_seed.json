@@ -1,0 +1,928 @@
+[
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "FTSE_ALL_WORLD",
+    "citation_keys": [
+      "vanguard_vwra",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0022,
+    "extra": {
+      "isin": "IE00BK5BQT80"
+    },
+    "liquidity_proxy": "LSE primary listing with broad secondary market participation",
+    "liquidity_score": 0.88,
+    "name": "Vanguard FTSE All-World UCITS ETF (USD Acc)",
+    "rationale": "Single-fund global equity implementation with broad developed and emerging coverage and accumulating share class.",
+    "replication_method": "physical",
+    "sleeve_key": "global_equity_core",
+    "symbol": "VWRA",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "MSCI_ACWI",
+    "citation_keys": [
+      "ishares_ssac",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.002,
+    "extra": {
+      "aum_usd": 27273730000.0,
+      "bid_ask_spread_proxy": 7.38,
+      "factsheet_asof": "2026-01-31",
+      "isin": "IE00B6R52259",
+      "market_data_asof": "2026-03-08",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": 0.07,
+      "tracking_difference_3y": 0.01,
+      "tracking_difference_5y": 0.09,
+      "volume_30d_avg": 52449.0
+    },
+    "liquidity_proxy": "Large UCITS platform depth across EU venues",
+    "liquidity_score": 0.86,
+    "name": "iShares MSCI ACWI UCITS ETF (Acc)",
+    "rationale": "Global ACWI implementation that can be used as an alternate one-fund core with comparable scope.",
+    "replication_method": "physical",
+    "sleeve_key": "global_equity_core",
+    "symbol": "SSAC",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "MSCI_WORLD",
+    "citation_keys": [
+      "ishares_iwda",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.002,
+    "extra": {
+      "isin": "IE00B4L5Y983"
+    },
+    "liquidity_proxy": "High turnover UCITS developed-market listing",
+    "liquidity_score": 0.87,
+    "name": "iShares Core MSCI World UCITS ETF (Acc)",
+    "rationale": "Developed-market anchor that can pair with a dedicated EM sleeve in optional split implementations.",
+    "replication_method": "physical",
+    "sleeve_key": "global_equity_core",
+    "symbol": "IWDA",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "SP500",
+    "citation_keys": [
+      "ishares_cspx",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0007,
+    "extra": {
+      "aum_usd": 139574790000.0,
+      "bid_ask_spread_proxy": 10.08,
+      "factsheet_asof": "2026-01-31",
+      "isin": "IE00B5BMR087",
+      "market_data_asof": "2026-03-08",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": 0.15,
+      "tracking_difference_3y": 0.18,
+      "tracking_difference_5y": 0.19,
+      "volume_30d_avg": 133398.0
+    },
+    "liquidity_proxy": "Highly liquid UCITS S&P 500 tracker with deep European market access",
+    "liquidity_score": 0.9,
+    "name": "iShares Core S&P 500 UCITS ETF (Acc)",
+    "rationale": "US large-cap focused alternative for investors preferring S&P 500 exposure over global diversification. Lower TER than global funds.",
+    "replication_method": "physical",
+    "sleeve_key": "global_equity_core",
+    "symbol": "CSPX",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "distributing",
+    "benchmark_key": "FTSE_ALL_WORLD",
+    "citation_keys": [
+      "vanguard_vwrl",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0019,
+    "extra": {
+      "aum_usd": 59490000000.0,
+      "bid_ask_spread_proxy": 3.22,
+      "factsheet_asof": "2026-01-31",
+      "isin": "IE00B3RBWM25",
+      "market_data_asof": "2026-03-08",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": -0.08,
+      "tracking_difference_3y": -0.02,
+      "tracking_difference_5y": -0.03,
+      "volume_30d_avg": 81795.0
+    },
+    "liquidity_proxy": "LSE primary listing with broad secondary market participation",
+    "liquidity_score": 0.87,
+    "name": "Vanguard FTSE All-World UCITS ETF (USD Dist)",
+    "rationale": "Distributing share class alternative to VWRA for investors requiring income distribution instead of accumulation.",
+    "replication_method": "physical",
+    "sleeve_key": "global_equity_core",
+    "symbol": "VWRL",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "distributing",
+    "benchmark_key": "FTSE_DEV_WORLD",
+    "citation_keys": [
+      "vanguard_veve",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0012,
+    "extra": {
+      "aum_usd": 10220000000.0,
+      "bid_ask_spread_proxy": 10.42,
+      "factsheet_asof": "2026-01-31",
+      "isin": "IE00BKX55T58",
+      "market_data_asof": "2026-03-08",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": 0.12,
+      "tracking_difference_3y": 0.16,
+      "tracking_difference_5y": 0.15,
+      "volume_30d_avg": 26690.0
+    },
+    "liquidity_proxy": "Broad cross-listing liquidity on major UCITS exchanges",
+    "liquidity_score": 0.84,
+    "name": "Vanguard FTSE Developed World UCITS ETF",
+    "rationale": "Developed-market sleeve that may be paired with emerging and China satellites in split structures.",
+    "replication_method": "physical",
+    "sleeve_key": "developed_ex_us_optional",
+    "symbol": "VEVE",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "MSCI_WORLD",
+    "citation_keys": [
+      "ishares_iwda",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.002,
+    "extra": {
+      "isin": "IE00B4L5Y983"
+    },
+    "liquidity_proxy": "High turnover UCITS developed-market listing",
+    "liquidity_score": 0.87,
+    "name": "iShares Core MSCI World UCITS ETF (Acc)",
+    "rationale": "Can function as developed-market proxy when optional regional split is monitored alongside EM and China satellites.",
+    "replication_method": "physical",
+    "sleeve_key": "developed_ex_us_optional",
+    "symbol": "IWDA",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "MSCI_EM_IMI",
+    "citation_keys": [
+      "ishares_eimi",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0018,
+    "extra": {
+      "aum_usd": 37581410000.0,
+      "factsheet_asof": "2026-01-31",
+      "isin": "IE00BKM4GZ66",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": 0.21,
+      "tracking_difference_3y": 0.08,
+      "tracking_difference_5y": 0.06
+    },
+    "liquidity_proxy": "Core UCITS EM vehicle with broad exchange liquidity",
+    "liquidity_score": 0.84,
+    "name": "iShares Core MSCI EM IMI UCITS ETF",
+    "rationale": "Broad IMI coverage including large, mid, and small-cap EM names aligns with long-horizon sleeve intent.",
+    "replication_method": "physical",
+    "sleeve_key": "emerging_markets",
+    "symbol": "EIMI",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "FTSE_EM",
+    "citation_keys": [
+      "vanguard_vfea",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0017,
+    "extra": {
+      "aum_usd": 5217000000.0,
+      "factsheet_asof": "2026-01-31",
+      "isin": "IE00BK5BR733",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": -0.52,
+      "tracking_difference_3y": -0.5,
+      "tracking_difference_5y": -0.42
+    },
+    "liquidity_proxy": "UCITS emerging-market listing with broad issuer support",
+    "liquidity_score": 0.81,
+    "name": "Vanguard FTSE Emerging Markets UCITS ETF (Acc)",
+    "rationale": "Alternative broad EM exposure with accumulating share class and similar sleeve role.",
+    "replication_method": "physical",
+    "sleeve_key": "emerging_markets",
+    "symbol": "VFEA",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "MSCI_CHINA",
+    "citation_keys": [
+      "hsbc_hmch",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.1,
+    "expense_ratio": 0.0028,
+    "extra": {
+      "factsheet_asof": "2026-01-31",
+      "isin": "IE00B44T3H88",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": -0.37,
+      "tracking_difference_3y": -0.3,
+      "tracking_difference_5y": -0.23
+    },
+    "liquidity_proxy": "UCITS listing liquidity with market-maker support",
+    "liquidity_score": 0.76,
+    "name": "HSBC MSCI China UCITS ETF",
+    "rationale": "Direct China equity sleeve candidate for capped satellite allocation monitoring.",
+    "replication_method": "physical",
+    "sleeve_key": "china_satellite",
+    "symbol": "HMCH",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "MSCI_CHINA",
+    "citation_keys": [
+      "xtrackers_china",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "LU",
+    "expected_withholding_drag_estimate": 0.1,
+    "expense_ratio": 0.0065,
+    "extra": {
+      "factsheet_asof": "2026-01-30",
+      "isin": "LU0514695690",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD"
+    },
+    "liquidity_proxy": "UCITS exchange liquidity across major European venues",
+    "liquidity_score": 0.72,
+    "name": "Xtrackers MSCI China UCITS ETF 1C",
+    "rationale": "Alternate China UCITS sleeve for implementation comparison under explicit cap discipline.",
+    "replication_method": "physical",
+    "sleeve_key": "china_satellite",
+    "symbol": "XCHA",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "GLOBAL_AGG_BOND",
+    "citation_keys": [
+      "ishares_aggu",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.001,
+    "extra": {
+      "aum_usd": 13384340000.0,
+      "average_maturity": 8.06,
+      "credit_quality_mix": "investment-grade diversified global aggregate",
+      "effective_duration": 6.18,
+      "factsheet_asof": "2026-01-31",
+      "government_vs_corporate_split": "mixed government, government-related, corporate and securitized",
+      "holdings_count": 19979,
+      "interest_rate_sensitivity_proxy": "intermediate_duration",
+      "isin": "IE00BZ043R46",
+      "issuer_concentration_proxy": "19,979 holdings diversified issuer base",
+      "market_data_asof": "2026-03-08",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": -3.93,
+      "tracking_difference_3y": -1.03,
+      "tracking_difference_5y": -2.02,
+      "yield_proxy": 3.56
+    },
+    "liquidity_proxy": "Core UCITS bond vehicle with deep aggregate-bond secondary liquidity",
+    "liquidity_score": 0.86,
+    "name": "iShares Core Global Aggregate Bond UCITS ETF",
+    "rationale": "Broad IG bond coverage across sovereign and corporate issuers in a diversified global wrapper.",
+    "replication_method": "sampling",
+    "sleeve_key": "ig_bonds",
+    "symbol": "AGGU",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "GLOBAL_AGG_BOND_HDG",
+    "citation_keys": [
+      "vanguard_vagu",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0008,
+    "extra": {
+      "aum_usd": 5492000000.0,
+      "average_maturity": 8.1,
+      "credit_quality_mix": "AA-average quality",
+      "effective_duration": 6.2,
+      "factsheet_asof": "2026-01-31",
+      "government_vs_corporate_split": "Treasury/federal 53.3%, corporate sectors 21.4%, securitised 11.4%, government-related 8.1%",
+      "interest_rate_sensitivity_proxy": "intermediate_duration",
+      "isin": "IE00BG47KJ78",
+      "issuer_concentration_proxy": "globally diversified aggregate bond issuer base",
+      "market_data_asof": "2026-03-08",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "tracking_difference_1y": -0.09,
+      "tracking_difference_3y": -0.1,
+      "tracking_difference_5y": -0.09,
+      "yield_proxy": 3.83
+    },
+    "liquidity_proxy": "Institutional UCITS bond liquidity profile",
+    "liquidity_score": 0.82,
+    "name": "Vanguard Global Aggregate Bond UCITS ETF (USD Hedged Acc)",
+    "rationale": "Accumulating global aggregate option with currency-hedged profile for implementation comparison.",
+    "replication_method": "sampling",
+    "sleeve_key": "ig_bonds",
+    "symbol": "VAGU",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "distributing",
+    "benchmark_key": "SGD_GOV_BOND",
+    "citation_keys": [
+      "nikko_a35",
+      "iras_overseas_income"
+    ],
+    "domicile": "SG",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.0024,
+    "extra": {
+      "credit_quality_mix": "AAA-rated Singapore government bonds",
+      "effective_duration": 8.53,
+      "average_maturity_not_disclosed": true,
+      "factsheet_asof": "2026-01-31",
+      "government_vs_corporate_split": "government_only",
+      "interest_rate_sensitivity_proxy": "sgd_government_bond_duration",
+      "isin": "SG1S08926457",
+      "issuer_concentration_proxy": "Top 10 holdings concentration 51.5%; 5 issuers in ETF information pack as of 31 Mar 2022.",
+      "primary_listing_exchange": "SGX",
+      "primary_trading_currency": "SGD",
+      "top10_concentration_pct": 51.5,
+      "yield_proxy": 2.17
+    },
+    "liquidity_proxy": "SGX local listing for SGD-oriented bond implementation",
+    "liquidity_score": 0.8,
+    "name": "ABF Singapore Bond Index Fund",
+    "rationale": "Local SGD bond sleeve reference for investors emphasizing domestic currency liability matching.",
+    "replication_method": "physical",
+    "sleeve_key": "ig_bonds",
+    "symbol": "A35",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "SHORT_TBILL",
+    "citation_keys": [
+      "ishares_ib01",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0007,
+    "extra": {
+      "aum_usd": 25229390000.0,
+      "average_maturity": 0.38,
+      "bid_ask_spread_proxy": 5.02,
+      "credit_quality_mix": "US Treasury only",
+      "effective_duration": 0.36,
+      "factsheet_asof": "2026-01-31",
+      "government_vs_corporate_split": "sovereign_only",
+      "interest_rate_sensitivity_proxy": "short_duration",
+      "isin": "IE00BGSF1X88",
+      "market_data_asof": "2026-03-08",
+      "portfolio_quality_summary": "short-duration US Treasury reserve sleeve",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "USD",
+      "sg_suitability_note": "UCITS short-duration Treasury implementation that can be reviewed for the reserve sleeve under the Singapore tax lens.",
+      "redemption_settlement_notes": "Secondary-market ETF settlement; fund-side redemption assumptions are not used in runtime scoring.",
+      "tracking_difference_1y": 0.0,
+      "tracking_difference_3y": -0.01,
+      "tracking_difference_5y": -0.03,
+      "volume_30d_avg": 393942.0,
+      "weighted_average_maturity": 0.38,
+      "yield_proxy": 3.61
+    },
+    "instrument_type": "etf_ucits",
+    "liquidity_proxy": "Short-duration treasury UCITS vehicle with steady turnover",
+    "liquidity_score": 0.8,
+    "name": "iShares $ Treasury Bond 0-1yr UCITS ETF",
+    "rationale": "Short-maturity treasury profile that can support liquidity-focused reserve sleeve design.",
+    "replication_method": "physical",
+    "sleeve_key": "cash_bills",
+    "symbol": "IB01",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "SHORT_TBILL",
+    "citation_keys": [
+      "spdr_sg_mmf",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "US",
+    "expected_withholding_drag_estimate": 0.3,
+    "expense_ratio": 0.00135,
+    "extra": {
+      "cusip": "78468R703",
+      "factsheet_asof": "2025-12-31",
+      "portfolio_quality_summary": "US Treasury bills only reserve ETF.",
+      "primary_listing_exchange": "NYSEARCA",
+      "primary_trading_currency": "USD",
+      "sg_suitability_note": "US-listed T-bill ETF reserve candidate. Singapore suitability remains reviewable, with tax and estate-risk posture surfaced separately.",
+      "tracking_difference_1y": -0.14,
+      "tracking_difference_3y": -0.14,
+      "tracking_difference_5y": -0.15
+    },
+    "instrument_type": "etf_us",
+    "liquidity_proxy": "High on-screen liquidity in US session",
+    "liquidity_score": 0.92,
+    "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+    "rationale": "US-listed bills benchmark for cross-market implementation comparison under SG tax lens.",
+    "replication_method": "physical",
+    "sleeve_key": "cash_bills",
+    "symbol": "BIL",
+    "us_situs_risk_flag": true
+  },
+  {
+    "accumulation": "distribution",
+    "benchmark_key": "SHORT_TBILL",
+    "citation_keys": [
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "US",
+    "expected_withholding_drag_estimate": null,
+    "expense_ratio": 0.0009,
+    "extra": {
+      "factsheet_asof": null,
+      "portfolio_quality_summary": "US Treasury bills only reserve ETF.",
+      "primary_listing_exchange": "NYSEARCA",
+      "primary_trading_currency": "USD",
+      "sg_suitability_note": "US-listed T-bill reserve candidate. Singapore review should consider tax and estate-risk posture explicitly."
+    },
+    "instrument_type": "etf_us",
+    "liquidity_proxy": "Large US Treasury-bill ETF with strong on-screen secondary liquidity",
+    "liquidity_score": 0.94,
+    "name": "iShares 0-3 Month Treasury Bond ETF",
+    "rationale": "Ultra-short Treasury implementation for reserve-sleeve comparison alongside UCITS and other bill ETFs.",
+    "replication_method": "physical",
+    "sleeve_key": "cash_bills",
+    "symbol": "SGOV",
+    "us_situs_risk_flag": true
+  },
+  {
+    "accumulation": "distribution",
+    "benchmark_key": "SHORT_TBILL",
+    "citation_keys": [
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "US",
+    "expected_withholding_drag_estimate": null,
+    "expense_ratio": 0.0014,
+    "extra": {
+      "factsheet_asof": null,
+      "portfolio_quality_summary": "US Treasury bills reserve ETF with slightly longer bill ladder.",
+      "primary_listing_exchange": "NYSEARCA",
+      "primary_trading_currency": "USD",
+      "sg_suitability_note": "US-listed T-bill reserve candidate. Singapore review should consider tax and estate-risk posture explicitly."
+    },
+    "instrument_type": "etf_us",
+    "liquidity_proxy": "US Treasury-bill ETF with secondary-market liquidity and short-duration reserve profile",
+    "liquidity_score": 0.88,
+    "name": "SPDR Bloomberg 3-12 Month T-Bill ETF",
+    "rationale": "Short-duration bills implementation for reserve-sleeve review when a slightly longer maturity bucket is acceptable.",
+    "replication_method": "physical",
+    "sleeve_key": "cash_bills",
+    "symbol": "BILS",
+    "us_situs_risk_flag": true
+  },
+  {
+    "accumulation": "unknown",
+    "citation_keys": [],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": null,
+    "expense_ratio": null,
+    "extra": {
+      "policy_placeholder": true
+    },
+    "instrument_type": "etf_ucits",
+    "liquidity_proxy": "unknown",
+    "liquidity_score": null,
+    "name": "UCITS money market ETF candidate (policy placeholder)",
+    "rationale": "Policy placeholder for UCITS money-market ETF slot when implementation review has not selected a concrete share class.",
+    "replication_method": "unknown",
+    "sleeve_key": "cash_bills",
+    "symbol": "UCITS_MMF_PLACEHOLDER",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "n/a",
+    "citation_keys": [
+      "mas_tbill",
+      "iras_overseas_income"
+    ],
+    "domicile": "SG",
+    "expected_withholding_drag_estimate": null,
+    "expense_ratio": null,
+    "extra": {
+      "share_class_id": "MAS_TBILL"
+    },
+    "instrument_type": "t_bill_sg",
+    "liquidity_proxy": "Primary auctions and local money-market channels",
+    "liquidity_score": null,
+    "name": "Singapore Treasury Bills (MAS auctions)",
+    "rationale": "Policy fallback candidate for SGD base-currency reserve sleeve implementation review.",
+    "replication_method": "sovereign bill issuance",
+    "sleeve_key": "cash_bills",
+    "symbol": "SG_TBILL_POLICY",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "distribution",
+    "citation_keys": [
+      "fullerton_sgd_cash",
+      "iras_overseas_income"
+    ],
+    "domicile": "SG",
+    "expected_withholding_drag_estimate": null,
+    "expense_ratio": null,
+    "extra": {},
+    "instrument_type": "money_market_fund_sg",
+    "liquidity_proxy": "Fund dealing cycle and local settlement",
+    "liquidity_score": null,
+    "name": "SGD Money Market Fund (example class)",
+    "rationale": "Policy fallback candidate where direct T-bill implementation is operationally constrained.",
+    "replication_method": "active cash management",
+    "sleeve_key": "cash_bills",
+    "symbol": "SGD_MMF_POLICY",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "n/a",
+    "citation_keys": [
+      "iras_overseas_income"
+    ],
+    "domicile": "SG",
+    "expected_withholding_drag_estimate": null,
+    "expense_ratio": null,
+    "extra": {
+      "policy_placeholder": true
+    },
+    "instrument_type": "cash_account_sg",
+    "liquidity_proxy": "Bank cash account",
+    "liquidity_score": null,
+    "name": "SGD cash reserve",
+    "rationale": "Policy placeholder for liquidity reserve when instrument implementation is pending.",
+    "replication_method": "cash account",
+    "sleeve_key": "cash_bills",
+    "symbol": "SGD_CASH_RESERVE",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "GOLD",
+    "citation_keys": [
+      "ishares_sgln",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.0012,
+    "extra": {
+      "isin": "IE00B4ND3602"
+    },
+    "liquidity_proxy": "Large ETC with active market-maker depth",
+    "liquidity_score": 0.82,
+    "name": "iShares Physical Gold ETC",
+    "rationale": "Physical gold sleeve candidate that can diversify inflation or policy-shock regimes.",
+    "replication_method": "physically backed",
+    "sleeve_key": "real_assets",
+    "symbol": "SGLN",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "BROAD_COMMODITIES",
+    "citation_keys": [
+      "invesco_cmod",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.0019,
+    "extra": {
+      "isin": "IE00BD6FTQ80"
+    },
+    "liquidity_proxy": "UCITS commodity vehicle with broad futures-based index exposure",
+    "liquidity_score": 0.71,
+    "name": "Invesco Bloomberg Commodity UCITS ETF",
+    "rationale": "Broad commodity beta reference for conservative alternatives and real-assets comparisons.",
+    "replication_method": "swap-based",
+    "sleeve_key": "real_assets",
+    "symbol": "CMOD",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "distributing",
+    "benchmark_key": "GLOBAL_REITS",
+    "citation_keys": [
+      "ishares_iwdp",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0059,
+    "extra": {
+      "bid_ask_spread_proxy": 12.0,
+      "isin": "IE00B1FZS350",
+      "launch_date": "2007-11-20",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "GBP",
+      "tracking_difference_1y": -0.0003
+    },
+    "liquidity_proxy": "UCITS REIT listing liquidity with developed-market property basket",
+    "liquidity_score": 0.7,
+    "name": "iShares Developed Markets Property Yield UCITS ETF",
+    "rationale": "Global REIT implementation reference for income-oriented real-asset sleeve comparisons.",
+    "replication_method": "physical",
+    "sleeve_key": "real_assets",
+    "symbol": "IWDP",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "GOLD",
+    "citation_keys": [
+      "ishares_sgln",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.0012,
+    "extra": {},
+    "liquidity_proxy": "Large ETC with active market-maker depth",
+    "liquidity_score": 0.82,
+    "name": "iShares Physical Gold ETC",
+    "rationale": "Gold candidate can act as defensive diversifier within conservative alternatives sleeve framing.",
+    "replication_method": "physically backed",
+    "sleeve_key": "alternatives",
+    "symbol": "SGLN",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "accumulating",
+    "benchmark_key": "BROAD_COMMODITIES",
+    "citation_keys": [
+      "invesco_cmod",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.0019,
+    "extra": {},
+    "liquidity_proxy": "UCITS commodity vehicle with broad futures-based index exposure",
+    "liquidity_score": 0.71,
+    "name": "Invesco Bloomberg Commodity UCITS ETF",
+    "rationale": "Broad commodity implementation provides an additional diversifier in inflation-sensitive windows.",
+    "replication_method": "swap-based",
+    "sleeve_key": "alternatives",
+    "symbol": "CMOD",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "distribution",
+    "benchmark_key": "GLOBAL_REITS",
+    "citation_keys": [
+      "ishares_iwdp",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "IE",
+    "expected_withholding_drag_estimate": 0.15,
+    "expense_ratio": 0.0059,
+    "extra": {
+      "bid_ask_spread_proxy": 12.0,
+      "isin": "IE00B1FZS350",
+      "launch_date": "2007-11-20",
+      "primary_listing_exchange": "LSE",
+      "primary_trading_currency": "GBP",
+      "tracking_difference_1y": -0.0003
+    },
+    "liquidity_proxy": "UCITS REIT listing liquidity with developed-market property basket",
+    "liquidity_score": 0.7,
+    "name": "iShares Developed Markets Property Yield UCITS ETF",
+    "rationale": "Global REIT implementation can be reviewed as optional real-income diversifier exposure.",
+    "replication_method": "physical",
+    "sleeve_key": "alternatives",
+    "symbol": "IWDP",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "distributing",
+    "citation_keys": [
+      "dbmf",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "US",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.0085,
+    "extra": {
+      "bucket": "managed_futures",
+      "bucket_target_weight": 2.0,
+      "cusip": "46138G862",
+      "leverage_used": false,
+      "margin_required": false,
+      "max_loss_known": true,
+      "short_options": false
+    },
+    "instrument_type": "etf_us",
+    "liquidity_proxy": "US ETF with consistent daily creation-redemption activity",
+    "liquidity_score": 0.8,
+    "name": "iMGP DBi Managed Futures Strategy ETF",
+    "rationale": "Managed-futures bucket reference for convex allocation sizing diagnostics.",
+    "replication_method": "active futures strategy",
+    "sleeve_key": "convex",
+    "symbol": "DBMF",
+    "us_situs_risk_flag": true
+  },
+  {
+    "accumulation": "distributing",
+    "citation_keys": [
+      "kmlm",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "US",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.009,
+    "extra": {
+      "bucket": "managed_futures",
+      "bucket_target_weight": 2.0,
+      "cusip": "50047X704",
+      "leverage_used": false,
+      "margin_required": false,
+      "max_loss_known": true,
+      "short_options": false
+    },
+    "instrument_type": "etf_us",
+    "liquidity_proxy": "US ETF with moderate on-screen liquidity",
+    "liquidity_score": 0.72,
+    "name": "KFA Mount Lucas Managed Futures Index Strategy ETF",
+    "rationale": "Managed-futures alternate candidate for convex bucket implementation review.",
+    "replication_method": "index futures strategy",
+    "sleeve_key": "convex",
+    "symbol": "KMLM",
+    "us_situs_risk_flag": true
+  },
+  {
+    "accumulation": "distributing",
+    "citation_keys": [
+      "tail",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "US",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.0059,
+    "extra": {
+      "bucket": "tail_hedge",
+      "bucket_target_weight": 0.7,
+      "cusip": "132061862",
+      "leverage_used": false,
+      "margin_required": false,
+      "max_loss_known": true,
+      "short_options": false
+    },
+    "instrument_type": "etf_us",
+    "liquidity_proxy": "US ETF with active options overlay and daily fund liquidity",
+    "liquidity_score": 0.82,
+    "name": "Cambria Tail Risk ETF",
+    "rationale": "Tail-hedge bucket candidate aligned with known-max-loss ETF wrapper structure.",
+    "replication_method": "options + fixed income mix",
+    "sleeve_key": "convex",
+    "symbol": "TAIL",
+    "us_situs_risk_flag": true
+  },
+  {
+    "accumulation": "n/a",
+    "citation_keys": [
+      "cboe_spx",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "SG",
+    "expected_withholding_drag_estimate": null,
+    "expense_ratio": null,
+    "extra": {
+      "bucket": "long_put",
+      "bucket_target_weight": 0.3,
+      "fallback_bucket": "tail_hedge",
+      "fallback_routing": "If options permissions unavailable, allocate this bucket to tail-hedge ETF bucket.",
+      "leverage_used": false,
+      "margin_required": false,
+      "max_loss_known": true,
+      "policy_placeholder": true,
+      "short_options": false
+    },
+    "instrument_type": "long_put_overlay_strategy",
+    "liquidity_proxy": "Listed index option liquidity dependent on tenor and strike",
+    "liquidity_score": null,
+    "name": "Long put overlay strategy (policy placeholder)",
+    "rationale": "Illustrative policy overlay, not a product. Max loss is known at premium outlay with no short-options exposure.",
+    "replication_method": "long listed option",
+    "sleeve_key": "convex",
+    "symbol": "SPX_LONG_PUT",
+    "us_situs_risk_flag": false
+  },
+  {
+    "accumulation": "distributing",
+    "citation_keys": [
+      "caos",
+      "irs_nra",
+      "iras_overseas_income"
+    ],
+    "domicile": "US",
+    "expected_withholding_drag_estimate": 0.0,
+    "expense_ratio": 0.0063,
+    "extra": {
+      "bucket": "tail_hedge",
+      "bucket_target_weight": 0.7,
+      "cusip": "02072C200",
+      "fallback_for": "long_put",
+      "leverage_used": false,
+      "margin_required": false,
+      "max_loss_known": true,
+      "short_options": false
+    },
+    "instrument_type": "etf_us",
+    "liquidity_proxy": "US ETF with moderate turnover and listed ETF access",
+    "liquidity_score": 0.68,
+    "name": "Alpha Architect Tail Risk ETF",
+    "rationale": "Tail-hedge fallback candidate where long-put overlays are restricted.",
+    "replication_method": "rules-based tail-risk strategy",
+    "sleeve_key": "convex",
+    "symbol": "CAOS",
+    "us_situs_risk_flag": true
+  }
+]

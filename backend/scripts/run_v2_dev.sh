@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BACKEND_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+REPO_ROOT="$(cd "${BACKEND_ROOT}/.." && pwd)"
+cd "${BACKEND_ROOT}"
+
+PRESET_FORECAST_AUTOSTART="${IA_FORECAST_AUTOSTART_ENABLED-}"
+PRESET_FORECAST_INCLUDE_BENCHMARKS="${IA_FORECAST_AUTOSTART_INCLUDE_BENCHMARKS-}"
+PRESET_FORECAST_RECHECK_SECONDS="${IA_FORECAST_AUTOSTART_RECHECK_SECONDS-}"
+PRESET_RUNTIME_SCHEDULER="${IA_RUNTIME_SCHEDULER_ENABLED-}"
+
+if [[ -f "${REPO_ROOT}/ops/env/.env.local" ]]; then
+  # shellcheck disable=SC1091
+  source "${REPO_ROOT}/ops/env/.env.local"
+fi
+
+if [[ -n "${PRESET_FORECAST_AUTOSTART}" ]]; then
+  export IA_FORECAST_AUTOSTART_ENABLED="${PRESET_FORECAST_AUTOSTART}"
+fi
+if [[ -n "${PRESET_FORECAST_INCLUDE_BENCHMARKS}" ]]; then
+  export IA_FORECAST_AUTOSTART_INCLUDE_BENCHMARKS="${PRESET_FORECAST_INCLUDE_BENCHMARKS}"
+fi
+if [[ -n "${PRESET_FORECAST_RECHECK_SECONDS}" ]]; then
+  export IA_FORECAST_AUTOSTART_RECHECK_SECONDS="${PRESET_FORECAST_RECHECK_SECONDS}"
+fi
+if [[ -n "${PRESET_RUNTIME_SCHEDULER}" ]]; then
+  export IA_RUNTIME_SCHEDULER_ENABLED="${PRESET_RUNTIME_SCHEDULER}"
+fi
+
+PYTHON_BIN="${BACKEND_ROOT}/.venv/bin/python"
+if [[ ! -x "${PYTHON_BIN}" ]]; then
+  PYTHON_BIN="$(command -v python3)"
+fi
+
+PORT="${IA_BACKEND_V2_PORT:-8001}"
+HOST="${IA_BACKEND_V2_HOST:-127.0.0.1}"
+
+export IA_FORECAST_AUTOSTART_ENABLED="${IA_FORECAST_AUTOSTART_ENABLED:-1}"
+export IA_FORECAST_AUTOSTART_INCLUDE_BENCHMARKS="${IA_FORECAST_AUTOSTART_INCLUDE_BENCHMARKS:-1}"
+export IA_FORECAST_AUTOSTART_RECHECK_SECONDS="${IA_FORECAST_AUTOSTART_RECHECK_SECONDS:-45}"
+export IA_FORECAST_DEFER_UNTIL_SURFACE_READY="${IA_FORECAST_DEFER_UNTIL_SURFACE_READY:-1}"
+export IA_RUNTIME_SCHEDULER_ENABLED="${IA_RUNTIME_SCHEDULER_ENABLED:-0}"
+
+echo "pwd=${BACKEND_ROOT}"
+echo "python=${PYTHON_BIN}"
+echo "host=${HOST}"
+echo "port=${PORT}"
+echo "forecast_autostart=${IA_FORECAST_AUTOSTART_ENABLED}"
+echo "forecast_autostart_include_benchmarks=${IA_FORECAST_AUTOSTART_INCLUDE_BENCHMARKS}"
+echo "forecast_autostart_recheck_seconds=${IA_FORECAST_AUTOSTART_RECHECK_SECONDS}"
+echo "forecast_defer_until_surface_ready=${IA_FORECAST_DEFER_UNTIL_SURFACE_READY}"
+echo "runtime_scheduler_enabled=${IA_RUNTIME_SCHEDULER_ENABLED}"
+echo "chronos_base_url=${IA_CHRONOS_BASE_URL:-http://127.0.0.1:8002}"
+echo "timesfm_base_url=${IA_TIMESFM_BASE_URL:-http://127.0.0.1:8003}"
+echo "moirai_base_url=${IA_MOIRAI_BASE_URL:-http://127.0.0.1:8004}"
+echo "lagllama_base_url=${IA_LAGLLAMA_BASE_URL:-http://127.0.0.1:8005}"
+
+exec "${PYTHON_BIN}" -m uvicorn app.v2.app:app --host "${HOST}" --port "${PORT}"

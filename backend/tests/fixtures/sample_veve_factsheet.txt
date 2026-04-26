@@ -1,0 +1,17 @@
+# ETF Factsheet Fixture for VEVE
+# Source: https://fund-docs.vanguard.com/FTSE_Developed_World_UCITS_ETF_USD_Distributing_9527_CH_RET_EN.pdf
+# Retrieved: 2026-03-02T14:30:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00BKX55T58
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is the DISTRIBUTING share class
+# ISIN IE00BKX55T58 = Distributing
+# ISIN IE00BK5BQV03 = Accumulating (different share class)
+
+ISIN: IE00BKX55T58
+Fund Domicile: Ireland
+Share Class: Distributing
+Ongoing Charges: 0.12%
+Fund Facts as at: 30 November 2025

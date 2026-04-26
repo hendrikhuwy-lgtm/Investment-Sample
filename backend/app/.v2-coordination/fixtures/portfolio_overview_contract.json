@@ -1,0 +1,116 @@
+{
+  "contract_version": "0.1.0",
+  "generated_at": "2026-04-01T00:00:00+00:00",
+  "surface": "portfolio_overview",
+  "portfolio_id": "portfolio_demo_main",
+  "portfolio_name": "Demo Long-Horizon Portfolio",
+  "portfolio_pressure": {
+    "portfolio_id": "portfolio_demo_main",
+    "pressure_id": "pressure_portfolio_demo_main",
+    "level": "elevated",
+    "drivers": [
+      "Multiple sleeves need comparison before a clean recommendation can be shown."
+    ],
+    "affected_sleeves": [
+      "sleeve_global_equity_core"
+    ],
+    "summary": "Multiple sleeves need comparison before a clean recommendation can be shown."
+  },
+  "visible_decision_state": {
+    "decision_id": "decision_review",
+    "state": "review",
+    "allowed_action": "compare",
+    "manual_approval_required": true,
+    "rationale": "The thesis is interesting, but still constrained enough that review remains mandatory."
+  },
+  "constraint_summary": {
+    "summary_id": "constraint_candidate_instrument_vwra",
+    "blocked_actions": [],
+    "reviewer_notes": [
+      "Cycle-aware language can shape conviction, but should not become a timing call.",
+      "Visible uncertainty should rise because evidence depth is still thin.",
+      "Implementation friction must clear before replacement language strengthens."
+    ]
+  },
+  "sleeves": [
+    {
+      "sleeve_id": "sleeve_global_equity_core",
+      "label": "Global Equity Core",
+      "purpose": "global equity core exposure",
+      "preferred_candidate_id": "candidate_instrument_vwra",
+      "pressure_level": "medium",
+      "summary": "VWRA currently leads because its interpretation is cleaner.",
+      "candidates": [
+        {
+          "candidate_id": "candidate_instrument_vwra",
+          "instrument_id": "instrument_vwra",
+          "symbol": "VWRA",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "mandate_fit": "aligned",
+          "conviction": 0.55,
+          "interpretation": {
+            "card_id": "card_instrument_vwra",
+            "title": "VWRA interpretation",
+            "thesis": "Vanguard FTSE All-World UCITS ETF looks most useful as a strategic sleeve implementation rather than a tactical call.",
+            "confidence": "high",
+            "signal_count": 4
+          },
+          "holdings_context": {
+            "portfolio_id": "portfolio_demo_main",
+            "is_current_holding": false,
+            "current_weight": 0.0,
+            "current_cost_basis": null,
+            "turnover_note": "Not currently held; portfolio funding source must still be explicit."
+          },
+          "key_supports": [
+            "Implementation cost is efficient at 0.22%.",
+            "Benchmark authority is direct, which supports comparison language.",
+            "Recent market series direction is included as context, not as a trading trigger."
+          ],
+          "key_risks": [
+            "Macro conditions are mixed enough that diversification language should stay more prominent than timing language."
+          ]
+        },
+        {
+          "candidate_id": "candidate_instrument_iwda",
+          "instrument_id": "instrument_iwda",
+          "symbol": "IWDA",
+          "name": "iShares Core MSCI World UCITS ETF",
+          "mandate_fit": "aligned",
+          "conviction": 0.55,
+          "interpretation": {
+            "card_id": "card_instrument_iwda",
+            "title": "IWDA interpretation",
+            "thesis": "iShares Core MSCI World UCITS ETF looks most useful as a strategic sleeve implementation rather than a tactical call.",
+            "confidence": "high",
+            "signal_count": 4
+          },
+          "holdings_context": {
+            "portfolio_id": "portfolio_demo_main",
+            "is_current_holding": true,
+            "current_weight": 0.28,
+            "current_cost_basis": "existing_core",
+            "turnover_note": "Already held; any change should clear a higher evidence bar."
+          },
+          "key_supports": [
+            "Implementation cost is efficient at 0.20%.",
+            "Benchmark authority is direct, which supports comparison language.",
+            "Recent market series direction is included as context, not as a trading trigger."
+          ],
+          "key_risks": [
+            "Macro conditions are mixed enough that diversification language should stay more prominent than timing language."
+          ]
+        }
+      ]
+    }
+  ],
+  "surface_changes": {
+    "surface_id": "portfolio_overview",
+    "event_count": 0,
+    "changed_entity_ids": [],
+    "decisions": [],
+    "trust_diffs": [],
+    "events": [],
+    "emitted_at": "2026-04-01T00:00:00+00:00"
+  }
+}

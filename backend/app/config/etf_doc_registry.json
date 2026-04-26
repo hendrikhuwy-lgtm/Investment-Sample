@@ -1,0 +1,310 @@
+{
+  "comment": "Curated registry of authoritative ETF documentation sources. These URLs are stable and manually verified.",
+  "candidates": [
+    {
+      "ticker": "VWRA",
+      "name": "Vanguard FTSE All-World UCITS ETF (Acc)",
+      "issuer": "Vanguard",
+      "expected_isin": "IE00BK5BQT80",
+      "docs": {
+        "factsheet_pdf_url": "https://api.vanguard.com/rs/gre/gls/1.3.0/documents/17327/gb",
+        "kid_pdf_url": "https://www.vanguard.co.uk/documents/portal/kiid-pdf/9679.pdf",
+        "prospectus_url": null,
+        "note": "Vanguard API endpoint provides PDF directly"
+      }
+    },
+    {
+      "ticker": "IWDA",
+      "name": "iShares MSCI World UCITS ETF (Acc)",
+      "issuer": "BlackRock",
+      "expected_isin": "IE00B4L5Y983",
+      "docs": {
+        "factsheet_pdf_url": "https://www.ishares.com/ch/individual/en/literature/fact-sheet/swda-ishares-core-msci-world-ucits-etf-fund-fact-sheet-en-ch.pdf",
+        "kid_pdf_url": "https://www.ishares.com/uk/individual/en/literature/kiid/kiid-iwda-ishares-msci-world-ucits-etf-acc-en-gb.pdf",
+        "prospectus_url": null,
+        "note": "iShares provides monthly PDF factsheets with full metrics"
+      }
+    },
+    {
+      "ticker": "CSPX",
+      "name": "iShares Core S&P 500 UCITS ETF (Acc)",
+      "issuer": "BlackRock",
+      "expected_isin": "IE00B5BMR087",
+      "docs": {
+        "factsheet_pdf_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/cspx-ishares-core-s-p-500-ucits-etf-usd-acc-fund-fact-sheet-en-gb.pdf",
+        "kid_pdf_url": "https://www.ishares.com/uk/individual/en/literature/kiid/kiid-cspx-ishares-core-s-p-500-ucits-etf-usd-acc-en-gb.pdf",
+        "prospectus_url": null,
+        "note": "iShares Core series, low TER"
+      }
+    },
+    {
+      "ticker": "ES3.SI",
+      "name": "Nikko AM STI ETF",
+      "issuer": "Nikko AM",
+      "expected_isin": "SG1L01001701",
+      "docs": {
+        "factsheet_pdf_url": "https://www.nikkoam.com.sg/files/documents/funds/factsheet/etf/nikko-am-singapore-sti-etf-retail.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": "https://www.nikkoam.com.sg/files/documents/funds/prospectus/etf/nikko-am-singapore-sti-etf-prospectus.pdf",
+        "note": "Nikko AM publishes monthly factsheets with holdings and metrics"
+      }
+    },
+    {
+      "ticker": "EIMI",
+      "name": "iShares Core MSCI EM IMI UCITS ETF (Acc)",
+      "issuer": "BlackRock",
+      "expected_isin": "IE00BKM4GZ66",
+      "docs": {
+        "factsheet_pdf_url": "https://www.ishares.com/ch/individual/en/literature/fact-sheet/eimi-ishares-core-msci-em-imi-ucits-etf-fund-fact-sheet-en-gb.pdf",
+        "kid_pdf_url": "https://www.ishares.com/uk/individual/en/literature/kiid/kiid-eimi-ishares-core-msci-emerging-markets-imi-ucits-etf-usd-acc-en-gb.pdf",
+        "prospectus_url": null,
+        "note": "Emerging markets broad exposure"
+      }
+    },
+    {
+      "ticker": "SSAC",
+      "name": "iShares MSCI ACWI UCITS ETF (Acc)",
+      "issuer": "BlackRock",
+      "expected_isin": "IE00B6R52259",
+      "docs": {
+        "factsheet_pdf_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/ssac-ishares-msci-acwi-ucits-etf-fund-fact-sheet-en-gb.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official iShares PDF factsheet"
+      }
+    },
+    {
+      "ticker": "VWRL",
+      "name": "Vanguard FTSE All-World UCITS ETF (USD Dist)",
+      "issuer": "Vanguard",
+      "expected_isin": "IE00B3RBWM25",
+      "docs": {
+        "factsheet_pdf_url": "https://fund-docs.vanguard.com/FTSE_All-World_UCITS_ETF_USD_Distributing_9505_EU_INT_UK_EN.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official Vanguard distributing share-class factsheet"
+      }
+    },
+    {
+      "ticker": "VEVE",
+      "name": "Vanguard FTSE Developed World UCITS ETF (Dist)",
+      "issuer": "Vanguard",
+      "expected_isin": "IE00BKX55T58",
+      "docs": {
+        "factsheet_pdf_url": "https://fund-docs.vanguard.com/FTSE_Developed_World_UCITS_ETF_USD_Distributing_9527_CH_RET_EN.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official Vanguard distributing share-class factsheet"
+      }
+    },
+    {
+      "ticker": "VFEA",
+      "name": "Vanguard FTSE Emerging Markets UCITS ETF (Acc)",
+      "issuer": "Vanguard",
+      "expected_isin": "IE00BK5BR733",
+      "docs": {
+        "factsheet_pdf_url": "https://fund-docs.vanguard.com/FTSE_Emerging_Markets_UCITS_ETF_USD_Accumulating_9678_EU_INT_UK_EN.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official Vanguard accumulating share-class factsheet"
+      }
+    },
+    {
+      "ticker": "AGGU",
+      "name": "iShares Core Global Aggregate Bond UCITS ETF USD Hedged (Acc)",
+      "issuer": "BlackRock",
+      "expected_isin": "IE00BZ043R46",
+      "docs": {
+        "factsheet_pdf_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/aggu-ishares-core-global-aggregate-bond-ucits-etf-fund-fact-sheet-en-gb.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official iShares bond ETF factsheet"
+      }
+    },
+    {
+      "ticker": "VAGU",
+      "name": "Vanguard Global Aggregate Bond UCITS ETF USD Hedged (Acc)",
+      "issuer": "Vanguard",
+      "expected_isin": "IE00BG47KJ78",
+      "docs": {
+        "factsheet_pdf_url": "https://fund-docs.vanguard.com/Global_Aggregate_Bond_UCITS_ETF_USD_Hedged_Accumulating_9600_CB_INT_EN.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official Vanguard bond ETF factsheet"
+      }
+    },
+    {
+      "ticker": "A35",
+      "name": "ABF Singapore Bond Index Fund",
+      "issuer": "Amova",
+      "expected_isin": "SG1S05002393",
+      "docs": {
+        "factsheet_html_url": "https://sg.amova-am.com/general/funds/detail/abf-singapore-bond-index-fund",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Issuer exposes authoritative public fund page and factsheet-style HTML rather than a stable PDF factsheet."
+      }
+    },
+    {
+      "ticker": "IB01",
+      "name": "iShares $ Treasury Bond 0-1yr UCITS ETF USD (Acc)",
+      "issuer": "BlackRock",
+      "expected_isin": "IE00BGSF1X88",
+      "docs": {
+        "factsheet_pdf_url": "https://www.blackrock.com/americas-offshore/en/literature/fact-sheet/ib01-ishares-treasury-bond-0-1yr-ucits-etf-fund-fact-sheet-en-lm.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official iShares short-duration bond ETF factsheet"
+      }
+    },
+    {
+      "ticker": "HMCH",
+      "name": "HSBC MSCI China UCITS ETF",
+      "issuer": "HSBC Asset Management",
+      "expected_isin": "IE00B44T3H88",
+      "docs": {
+        "factsheet_pdf_url": "https://www.assetmanagement.hsbc.nl/api/v1/download/document/ie00b44t3h88/nl/en/factsheet",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official HSBC PDF factsheet"
+      }
+    },
+    {
+      "ticker": "XCHA",
+      "name": "Xtrackers MSCI China UCITS ETF 1C",
+      "issuer": "DWS Xtrackers",
+      "expected_isin": "LU0514695690",
+      "docs": {
+        "factsheet_pdf_url": "https://etf.dws.com/en-gb/AssetDownload/Index/ef4d1ddd-e877-4743-bc94-cac0b3df649d/LU0514695690-GBB-FS-EN-2020-12-31.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official DWS factsheet"
+      }
+    },
+    {
+      "ticker": "SGLN",
+      "name": "iShares Physical Gold ETC",
+      "issuer": "BlackRock",
+      "expected_isin": "IE00B4ND3602",
+      "docs": {
+        "factsheet_pdf_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/sgln-ishares-physical-gold-etc-fund-fact-sheet-en-gb.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official iShares ETC factsheet"
+      }
+    },
+    {
+      "ticker": "CMOD",
+      "name": "Invesco Bloomberg Commodity UCITS ETF Acc",
+      "issuer": "Invesco",
+      "expected_isin": "IE00BD6FTQ80",
+      "docs": {
+        "factsheet_pdf_url": "https://www.invesco.com/content/dam/invesco/emea/en/product-documents/etf/share-class/factsheet/IE00BD6FTQ80_factsheet_en.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official Invesco ETF factsheet"
+      }
+    },
+    {
+      "ticker": "IWDP",
+      "name": "iShares Developed Markets Property Yield UCITS ETF USD (Dist)",
+      "issuer": "BlackRock",
+      "expected_isin": "IE00B1FZS350",
+      "docs": {
+        "factsheet_pdf_url": "https://www.blackrock.com/americas-offshore/en/literature/fact-sheet/iwdp-ishares-developed-markets-property-yield-ucits-etf-fund-fact-sheet-en-lm.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official iShares property ETF factsheet"
+      }
+    },
+    {
+      "ticker": "BIL",
+      "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+      "issuer": "State Street SPDR",
+      "expected_isin": null,
+      "docs": {
+        "factsheet_pdf_url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-bil.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official SPDR factsheet"
+      }
+    },
+    {
+      "ticker": "SGOV",
+      "name": "iShares 0-3 Month Treasury Bond ETF",
+      "issuer": "BlackRock",
+      "expected_isin": null,
+      "docs": {
+        "factsheet_pdf_url": "https://www.ishares.com/us/literature/fact-sheet/sgov-ishares-0-3-month-treasury-bond-etf-fund-fact-sheet-en-us.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official iShares US Treasury-bill ETF factsheet"
+      }
+    },
+    {
+      "ticker": "BILS",
+      "name": "SPDR Bloomberg 3-12 Month T-Bill ETF",
+      "issuer": "State Street SPDR",
+      "expected_isin": null,
+      "docs": {
+        "factsheet_pdf_url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-bils.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official SPDR factsheet"
+      }
+    },
+    {
+      "ticker": "DBMF",
+      "name": "iMGP DBi Managed Futures Strategy ETF",
+      "issuer": "Natixis",
+      "expected_isin": null,
+      "docs": {
+        "factsheet_pdf_url": "https://imgpfunds.com/wp-content/uploads/pdfs/holdings/DBMF_FACTSHEETS_EN.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official iMGP factsheet"
+      }
+    },
+    {
+      "ticker": "KMLM",
+      "name": "KFA Mount Lucas Managed Futures Index Strategy ETF",
+      "issuer": "KFA Funds",
+      "expected_isin": null,
+      "docs": {
+        "factsheet_html_url": "https://kfafunds.com/kmlm/",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official KFA Funds product profile used as curated issuer document source."
+      }
+    },
+    {
+      "ticker": "TAIL",
+      "name": "Cambria Tail Risk ETF",
+      "issuer": "Cambria",
+      "expected_isin": null,
+      "docs": {
+        "factsheet_html_url": "https://www.cambriafunds.com/tail",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official Cambria product profile used as curated issuer document source."
+      }
+    },
+    {
+      "ticker": "CAOS",
+      "name": "Alpha Architect Tail Risk ETF",
+      "issuer": "Alpha Architect",
+      "expected_isin": null,
+      "docs": {
+        "factsheet_pdf_url": "https://alphaarchitect.com/wp-content/uploads/compliance/etf/factsheets/Factsheet_CAOS.pdf",
+        "kid_pdf_url": null,
+        "prospectus_url": null,
+        "note": "Official Alpha Architect factsheet"
+      }
+    }
+  ],
+  "update_policy": {
+    "frequency": "monthly",
+    "verification_required": "Manual verification of URLs required before adding new candidates",
+    "url_stability": "Issuer PDF URLs change infrequently but should be monitored"
+  }
+}

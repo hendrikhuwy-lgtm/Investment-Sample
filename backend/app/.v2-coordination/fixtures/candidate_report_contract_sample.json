@@ -1,0 +1,29 @@
+{
+  "contract_version": "0.2.0",
+  "generated_at": "2026-04-01T00:00:00+00:00",
+  "surface_id": "candidate_report",
+  "candidate_id": "candidate_instrument_vwra",
+  "freshness_state": "stored_valid_context",
+  "holdings_overlay_present": false,
+  "investment_case": "VWRA offers a broad all-world equity implementation that can cover both developed and emerging market exposure in a single sleeve candidate. The current case is less about making a tactical market call and more about using a diversified, low-turnover vehicle that keeps the sleeve role simple and explainable.",
+  "current_implication": "The current implication is to keep VWRA near the front of the review set for global equity core exposure. The evidence supports continued comparison work, not immediate promotion language.",
+  "main_tradeoffs": [
+    "Broad all-world coverage improves simplicity, but it can reduce flexibility versus splitting developed and emerging exposure.",
+    "A single-fund implementation lowers operational burden, but benchmark and regional mix differences still need bounded comparison language.",
+    "The diversified structure helps the core sleeve, but current evidence depth is not yet strong enough to overstate edge versus nearby alternatives."
+  ],
+  "baseline_comparisons": [
+    {
+      "label": "Against IWDA",
+      "summary": "VWRA offers a fuller one-ticket global allocation, while IWDA remains a simpler developed-markets baseline with different regional exposure.",
+      "verdict": "broader_exposure"
+    },
+    {
+      "label": "Against ACWI benchmark framing",
+      "summary": "The benchmark fit is directionally supportive, but product claims should stay bounded to implementation and sleeve-role language.",
+      "verdict": "bounded_support"
+    }
+  ],
+  "evidence_depth": "moderate",
+  "mandate_boundary": "Do not turn the current review lead into an endorsement until benchmark support and replacement context are made explicit."
+}

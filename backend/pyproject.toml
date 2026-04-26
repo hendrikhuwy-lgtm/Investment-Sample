@@ -1,0 +1,23 @@
+[project]
+name = "investment-agent-backend"
+version = "0.1.0"
+description = "Objective investment aggregator with web+MCP ingestion, citation enforcement, tax-aware scoring, and alerting"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn>=0.30.0",
+  "pydantic>=2.8.0",
+  "pypdf>=5.4.0",
+  "requests>=2.32.0",
+  "sqlalchemy>=2.0",
+  "yfinance>=1.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

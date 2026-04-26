@@ -1,0 +1,13 @@
+# ETF Factsheet Fixture for IB01
+# Source: https://www.blackrock.com/americas-offshore/en/literature/fact-sheet/ib01-ishares-treasury-bond-0-1yr-ucits-etf-fund-fact-sheet-en-lm.pdf
+# Retrieved: 2026-03-02T16:00:00Z
+# Verified via: https://cbonds.com/etf/3357/
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+
+ISIN: IE00BGSF1X88
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.07%
+Fund Facts as at: 31 January 2026

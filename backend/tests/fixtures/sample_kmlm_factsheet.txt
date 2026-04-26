@@ -1,0 +1,15 @@
+# ETF Factsheet Fixture for KMLM
+# Source: https://kraneshares.com/etf/kmlm/
+# Retrieved: 2026-03-02T17:00:00Z
+# Verified via: https://kraneshares.com/etf/kmlm/
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is a US ETF - uses CUSIP identifier, not ISIN
+
+CUSIP: 50047X704
+Fund Domicile: United States
+Share Class: Distributing
+Ongoing Charges: 0.90%
+Fund Facts as at: 31 January 2026

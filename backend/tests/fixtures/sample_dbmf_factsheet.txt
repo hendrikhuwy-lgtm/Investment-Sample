@@ -1,0 +1,15 @@
+# ETF Factsheet Fixture for DBMF
+# Source: https://imgpfunds.com/wp-content/uploads/pdfs/holdings/DBMF_FACTSHEETS_EN.pdf
+# Retrieved: 2026-03-02T16:00:00Z
+# Verified via: https://imgpfunds.com/im-dbi-managed-futures-strategy-etf/
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is a US ETF - uses CUSIP identifier, not ISIN
+
+CUSIP: 46138G862
+Fund Domicile: United States
+Share Class: Distributing
+Ongoing Charges: 0.85%
+Fund Facts as at: 31 December 2025

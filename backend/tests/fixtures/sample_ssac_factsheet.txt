@@ -1,0 +1,13 @@
+# ETF Factsheet Fixture for SSAC
+# Source: https://www.ishares.com/uk/individual/en/literature/fact-sheet/ssac-ishares-msci-acwi-ucits-etf-fund-fact-sheet-en-gb.pdf
+# Retrieved: 2026-03-02T14:30:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00B6R52259
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+
+ISIN: IE00B6R52259
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.20%
+Fund Facts as at: 31 January 2026

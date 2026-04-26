@@ -1,0 +1,15 @@
+# ETF Factsheet Fixture for A35
+# Source: https://www.nikkoam.com.sg/media/pdf/fund/factsheet/Nikko%20AM%20ABF%20Singapore%20Bond%20Fund%20Factsheet.pdf
+# Retrieved: 2026-03-02T18:00:00Z
+# Verified via: https://cbonds.com/etf/18752/
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+#
+# NOTE: This is a Singapore-listed ETF with SGX ticker A35
+
+ISIN: SG1S08926457
+Fund Domicile: Singapore
+Share Class: Distributing
+Ongoing Charges: 0.24%
+Fund Facts as at: 31 January 2026

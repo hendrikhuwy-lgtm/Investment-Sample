@@ -1,0 +1,11 @@
+{
+  "selection_mode": "all_live_candidates_except_excluded",
+  "include_symbols": [],
+  "exclude_symbols": {
+    "UCITS_MMF_PLACEHOLDER": "policy_placeholder",
+    "SG_TBILL_POLICY": "policy_placeholder",
+    "SGD_MMF_POLICY": "policy_placeholder",
+    "SGD_CASH_RESERVE": "policy_placeholder",
+    "SPX_LONG_PUT": "strategy_placeholder"
+  }
+}

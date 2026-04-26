@@ -1,16 +1,18 @@
+.git
+.gitignore
 .DS_Store
 __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Local secrets and deployment overrides
+# Local secrets
 .env
 .env.*
 ops/env/.env
 ops/env/.env.*
 !ops/env/.env.example
 
-# Local runtime state
+# Runtime data and generated output
 *.db
 *.sqlite
 *.sqlite3
@@ -20,10 +22,14 @@ ops/env/.env.*
 /outbox/
 /backend/outbox/
 
-# Frontend dependencies and generated bundles
+# Dependencies and generated bundles
 node_modules/
 frontend-cortex/node_modules/
 frontend-cortex/dist/
 frontend-cortex/test-results/
 frontend/node_modules/
 frontend/dist/
+
+# Large/local-only research assets
+Kronos/
+.claude/

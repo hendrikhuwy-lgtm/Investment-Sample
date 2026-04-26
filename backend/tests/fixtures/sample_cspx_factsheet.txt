@@ -1,0 +1,13 @@
+# ETF Factsheet Fixture for CSPX
+# Source: https://www.ishares.com/uk/individual/en/literature/fact-sheet/cspx-ishares-core-s-p-500-ucits-etf-fund-fact-sheet-en-gb.pdf
+# Retrieved: 2026-03-02T14:30:00Z
+# Verified via: https://www.justetf.com/en/etf-profile.html?isin=IE00B5BMR087
+#
+# IMPORTANT: Fields below are extracted from official sources
+# Do not modify values without updating source URL and retrieval date
+
+ISIN: IE00B5BMR087
+Fund Domicile: Ireland
+Share Class: Accumulating
+Ongoing Charges: 0.07%
+Fund Facts as at: 31 January 2026

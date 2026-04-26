@@ -1,0 +1,55 @@
+iShares MSCI World UCITS ETF (Acc)
+
+FUND FACTS AS AT 31 JANUARY 2026
+
+Product Details
+ISIN: IE00B4L5Y983
+Bloomberg Ticker: IWDA LN
+Stock Exchange: London Stock Exchange
+Currency: USD
+
+Fund Information
+Legal Structure: UCITS ETF
+Fund Domicile: Ireland
+Inception Date: 25 September 2009
+Fiscal Year End: 31 May
+Share Class: Accumulating
+Distribution Policy: Income is reinvested
+
+Costs
+Total Expense Ratio (TER): 0.20% p.a.
+Ongoing Charges: 0.20%
+
+Fund Size
+Net Assets: USD 45.2 billion
+
+Investment Objective
+The Fund seeks to track the performance of the MSCI World Index, which is designed to
+measure the performance of large and mid-cap stocks across 23 developed markets.
+
+Top Holdings (as at 31 January 2026)
+1. Apple Inc - 4.52%
+2. Microsoft Corp - 3.98%
+3. Amazon.com Inc - 2.14%
+4. NVIDIA Corp - 1.87%
+5. Alphabet Inc Class A - 1.65%
+
+Benchmark Information
+Benchmark: MSCI World Index
+Replication Method: Physical (optimized sampling)
+Number of Holdings: 1,512
+
+Performance
+Tracking Difference (1 Year): -0.05%
+Tracking Difference (3 Year): -0.04%
+Tracking Difference (5 Year): -0.03%
+
+Risk Profile
+SRRI: 6 (on a scale of 1-7)
+
+Contact Information
+Fund Manager: BlackRock Asset Management Ireland Limited
+Administrator: State Street Fund Services (Ireland) Limited
+
+This document is marketing material.
+

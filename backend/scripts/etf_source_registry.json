@@ -1,0 +1,255 @@
+{
+  "_metadata": {
+    "description": "Primary source URLs for ETF factsheets and identifiers",
+    "last_updated": "2026-03-02",
+    "usage": "Used by build_factsheet_fixtures.py to download official documents",
+    "important": "ALL URLs and data must come from official issuer sources - NO FABRICATION",
+    "research_session": "2026-03-02 - Verified 17 ETF factsheet URLs via WebSearch (5 initial + 12 additional)"
+  },
+  "IWDA": {
+    "issuer": "BlackRock iShares",
+    "full_name": "iShares Core MSCI World UCITS ETF (Acc)",
+    "factsheet_url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund",
+    "identifier_type": "ISIN",
+    "notes": "Fixture already exists - sample_iwda_factsheet.txt - verified IE00B4L5Y983"
+  },
+  "VWRA": {
+    "issuer": "Vanguard",
+    "full_name": "Vanguard FTSE All-World UCITS ETF (USD Acc)",
+    "factsheet_url": "https://www.vanguard.co.uk/professional/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating",
+    "identifier_type": "ISIN",
+    "notes": "Fixture already exists - sample_vwra_factsheet.txt - verified IE00BK5BQT80"
+  },
+  "SSAC": {
+    "issuer": "BlackRock iShares",
+    "full_name": "iShares MSCI ACWI UCITS ETF (Acc)",
+    "factsheet_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/ssac-ishares-msci-acwi-ucits-etf-fund-fact-sheet-en-gb.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00B6R52259",
+    "notes": "Verified 2026-03-02 via ishares.com UK factsheet and JustETF",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00B6R52259",
+    "ter": "0.20%"
+  },
+  "EIMI": {
+    "issuer": "BlackRock iShares",
+    "full_name": "iShares Core MSCI EM IMI UCITS ETF",
+    "factsheet_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/eimi-ishares-core-msci-em-imi-ucits-etf-fund-fact-sheet-en-gb.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00BKM4GZ66",
+    "notes": "Verified 2026-03-02 via ishares.com UK factsheet and JustETF",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00BKM4GZ66",
+    "ter": "0.18%"
+  },
+  "VEVE": {
+    "issuer": "Vanguard",
+    "full_name": "Vanguard FTSE Developed World UCITS ETF (Dist)",
+    "factsheet_url": "https://fund-docs.vanguard.com/FTSE_Developed_World_UCITS_ETF_USD_Distributing_9527_CH_RET_EN.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00BKX55T58",
+    "notes": "Distributing ETF - Verified 2026-03-02 via Vanguard fund-docs and JustETF, ISIN IE00BKX55T58 (Distributing). NOTE: IE00BK5BQV03 is Accumulating version.",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00BKX55T58",
+    "ter": "0.12%"
+  },
+  "VFEA": {
+    "issuer": "Vanguard",
+    "full_name": "Vanguard FTSE Emerging Markets UCITS ETF (USD Acc)",
+    "factsheet_url": "https://fund-docs.vanguard.com/FTSE_Emerging_Markets_UCITS_ETF_USD_Accumulating_9678_EU_INT_UK_EN.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00BK5BR733",
+    "notes": "Verified 2026-03-02 via Vanguard fund-docs and JustETF",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00BK5BR733",
+    "ter": "0.17%"
+  },
+  "HMCH": {
+    "issuer": "HSBC Asset Management",
+    "full_name": "HSBC MSCI China UCITS ETF",
+    "factsheet_url": "https://www.assetmanagement.hsbc.nl/api/v1/download/document/ie00b44t3h88/nl/en/factsheet",
+    "identifier_type": "ISIN",
+    "isin": "IE00B44T3H88",
+    "notes": "Verified 2026-03-02 via HSBC Asset Management and JustETF. TER 0.28% (blueprint shows 0.30%).",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00B44T3H88",
+    "ter": "0.28%"
+  },
+  "XCHA": {
+    "issuer": "Xtrackers DWS",
+    "full_name": "Xtrackers MSCI China UCITS ETF 1C",
+    "factsheet_url": "https://etf.dws.com/LUX/ENG/Download/Factsheet/LU0514695690/-/MSCI-China-UCITS-ETF",
+    "identifier_type": "ISIN",
+    "isin": "LU0514695690",
+    "notes": "Verified 2026-03-02 via DWS ETF platform and JustETF. WARNING: Domicile is Luxembourg (LU), not Ireland (IE) as blueprint states.",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=LU0514695690",
+    "ter": "0.65%"
+  },
+  "AGGU": {
+    "issuer": "BlackRock iShares",
+    "full_name": "iShares Core Global Aggregate Bond UCITS ETF USD Hedged (Acc)",
+    "factsheet_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/aggu-ishares-core-global-aggregate-bond-ucits-etf-fund-fact-sheet-en-gb.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00BZ043R46",
+    "notes": "Bond ETF - Verified 2026-03-02 via ishares.com UK factsheet and JustETF",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00BZ043R46",
+    "ter": "0.10%"
+  },
+  "VAGU": {
+    "issuer": "Vanguard",
+    "full_name": "Vanguard Global Aggregate Bond UCITS ETF USD Hedged (Acc)",
+    "factsheet_url": "https://fund-docs.vanguard.com/Global_Aggregate_Bond_UCITS_ETF_USD_Hedged_Accumulating_9600_CB_INT_EN.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00BG47KJ78",
+    "notes": "Bond ETF - Verified 2026-03-02 via Vanguard fund-docs and JustETF",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00BG47KJ78",
+    "ter": "0.08%"
+  },
+  "IB01": {
+    "issuer": "BlackRock iShares",
+    "full_name": "iShares $ Treasury Bond 0-1yr UCITS ETF USD (Acc)",
+    "factsheet_url": "https://www.blackrock.com/americas-offshore/en/literature/fact-sheet/ib01-ishares-treasury-bond-0-1yr-ucits-etf-fund-fact-sheet-en-lm.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00BGSF1X88",
+    "notes": "Short duration bond ETF - Verified 2026-03-02 via BlackRock factsheet and Cbonds",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://cbonds.com/etf/3357/",
+    "ter": "0.07%"
+  },
+  "A35": {
+    "issuer": "Nikko AM",
+    "full_name": "Nikko AM SGD Investment Grade Corporate Bond ETF",
+    "factsheet_url": "TODO_MANUAL_RESEARCH_REQUIRED",
+    "identifier_type": "ISIN",
+    "notes": "Singapore-listed ETF"
+  },
+  "SGLN": {
+    "issuer": "BlackRock iShares",
+    "full_name": "iShares Physical Gold ETC",
+    "factsheet_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/sgln-ishares-physical-gold-etc-fund-fact-sheet-en-gb.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00B4ND3602",
+    "notes": "Commodity ETC - Verified 2026-03-02 via ishares.com UK factsheet and JustETF",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00B4ND3602",
+    "ter": "0.12%"
+  },
+  "CMOD": {
+    "issuer": "Invesco",
+    "full_name": "Invesco Bloomberg Commodity UCITS ETF Acc",
+    "factsheet_url": "https://www.invesco.com/content/dam/invesco/emea/en/product-documents/etf/share-class/factsheet/IE00BD6FTQ80_factsheet_en.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00BD6FTQ80",
+    "notes": "Commodity ETF - Verified 2026-03-02 via Invesco factsheet and JustETF. WARNING: Issuer is Invesco, not iShares as previously listed.",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00BD6FTQ80",
+    "ter": "0.19%"
+  },
+  "IWDP": {
+    "issuer": "BlackRock iShares",
+    "full_name": "iShares Developed Markets Property Yield UCITS ETF USD (Dist)",
+    "factsheet_url": "https://www.blackrock.com/americas-offshore/en/literature/fact-sheet/iwdp-ishares-developed-markets-property-yield-ucits-etf-fund-fact-sheet-en-lm.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00B1FZS350",
+    "notes": "REIT ETF (Distributing) - Verified 2026-03-02 via BlackRock factsheet and JustETF",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00B1FZS350",
+    "ter": "0.59%"
+  },
+  "CSPX": {
+    "issuer": "BlackRock iShares",
+    "full_name": "iShares Core S&P 500 UCITS ETF (Acc)",
+    "factsheet_url": "https://www.ishares.com/uk/individual/en/literature/fact-sheet/cspx-ishares-core-s-p-500-ucits-etf-fund-fact-sheet-en-gb.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00B5BMR087",
+    "notes": "S&P 500 tracker - Verified 2026-03-02 via ishares.com UK factsheet and JustETF",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00B5BMR087",
+    "ter": "0.07%"
+  },
+  "BIL": {
+    "issuer": "SPDR State Street",
+    "full_name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+    "factsheet_url": "https://www.ssga.com/library-content/products/factsheets/etfs/us/factsheet-us-en-bil.pdf",
+    "identifier_type": "CUSIP",
+    "cusip": "78468R703",
+    "notes": "US ETF - Verified 2026-03-02 via ssga.com factsheet and Cbonds. CUSIP identifier (not ISIN).",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://cbonds.com/etf/2181/",
+    "ter": "0.14%"
+  },
+  "TAIL": {
+    "issuer": "Cambria",
+    "full_name": "Cambria Tail Risk ETF",
+    "factsheet_url": "https://cambriafunds.com/tail",
+    "identifier_type": "CUSIP",
+    "cusip": "132061862",
+    "notes": "US ETF - Verified 2026-03-02 via Cambria Funds website and Morningstar. Factsheet available on main product page.",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.morningstar.com/etfs/bats/tail/quote",
+    "ter": "0.59%"
+  },
+  "DBMF": {
+    "issuer": "iMGP Funds",
+    "full_name": "iMGP DBi Managed Futures Strategy ETF",
+    "factsheet_url": "https://imgpfunds.com/wp-content/uploads/pdfs/holdings/DBMF_FACTSHEETS_EN.pdf",
+    "identifier_type": "CUSIP",
+    "cusip": "46138G862",
+    "notes": "US ETF - Managed futures. Verified 2026-03-02 via iMGP Funds official factsheet",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://imgpfunds.com/im-dbi-managed-futures-strategy-etf/",
+    "ter": "0.85%"
+  },
+  "KMLM": {
+    "issuer": "KraneShares",
+    "full_name": "KraneShares Mount Lucas Managed Futures Index Strategy ETF",
+    "factsheet_url": "https://kraneshares.com/etf/kmlm/",
+    "identifier_type": "CUSIP",
+    "cusip": "50047X704",
+    "notes": "US ETF - Managed futures. Verified 2026-03-02 via KraneShares website. Factsheet available on main product page.",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://kraneshares.com/etf/kmlm/",
+    "ter": "0.90%"
+  },
+  "CAOS": {
+    "issuer": "Alpha Architect",
+    "full_name": "Alpha Architect Tail Risk ETF",
+    "factsheet_url": "https://alphaarchitect.com/wp-content/uploads/compliance/etf/factsheets/Factsheet_CAOS.pdf",
+    "identifier_type": "CUSIP",
+    "cusip": "02072C200",
+    "notes": "US ETF - Tail risk hedge. Verified 2026-03-02 via Alpha Architect official factsheet",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://funds.alphaarchitect.com/caos/",
+    "ter": "0.63%"
+  },
+  "VWRL": {
+    "issuer": "Vanguard",
+    "full_name": "Vanguard FTSE All-World UCITS ETF (USD Dist)",
+    "factsheet_url": "https://fund-docs.vanguard.com/FTSE_All-World_UCITS_ETF_USD_Distributing_9505_EU_INT_UK_EN.pdf",
+    "identifier_type": "ISIN",
+    "isin": "IE00B3RBWM25",
+    "notes": "Distributing ETF - Verified 2026-03-02 via Vanguard fund-docs and JustETF. Note: IE00BK5BQT80 is Accumulating version (VWRA).",
+    "verified_date": "2026-03-02",
+    "source_verification": "https://www.justetf.com/en/etf-profile.html?isin=IE00B3RBWM25",
+    "ter": "0.19%"
+  },
+  "_instructions": {
+    "how_to_populate": [
+      "1. Visit issuer website for each ETF",
+      "2. Navigate to product page for the specific fund",
+      "3. Find the 'Documents' or 'Literature' section",
+      "4. Copy the URL for the latest factsheet PDF",
+      "5. Update factsheet_url field",
+      "6. Do NOT make up URLs - use TODO_MANUAL_RESEARCH_REQUIRED if unknown"
+    ],
+    "verification_checklist": [
+      "URL points directly to PDF (not HTML redirect page)",
+      "URL is from official issuer domain",
+      "Factsheet contains: ISIN/CUSIP, domicile, share class, TER, as-of date",
+      "Document is current (< 6 months old)"
+    ]
+  }
+}
