@@ -22,6 +22,8 @@ IA_AUTH_USERNAME=investor
 IA_AUTH_PASSWORD=<long random password>
 ```
 
+Optional market data provider keys can be added in the hosting provider's environment settings after the service is created. Leave unknown provider keys unset instead of using placeholder values.
+
 3. Start the backend:
 
 ```bash

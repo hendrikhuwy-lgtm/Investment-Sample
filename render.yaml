@@ -26,21 +26,3 @@ services:
         sync: false
       - key: IA_DB_PATH
         value: /app/storage/investment_agent.sqlite3
-      - key: FINNHUB_API_KEY
-        sync: false
-      - key: FRED_API_KEY
-        sync: false
-      - key: POLYGON_API_KEY
-        sync: false
-      - key: EODHD_API_KEY
-        sync: false
-      - key: TIINGO_API_KEY
-        sync: false
-      - key: ALPHA_VANTAGE_API_KEY
-        sync: false
-      - key: TWELVE_DATA_API_KEY
-        sync: false
-      - key: FMP_API_KEY
-        sync: false
-      - key: NASDAQ_DATA_LINK_API_KEY
-        sync: false
