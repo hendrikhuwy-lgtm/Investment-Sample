@@ -61,15 +61,16 @@ This repo includes `Dockerfile` and `render.yaml`.
 On Render:
 
 1. Create a Blueprint from this GitHub repo.
-2. Enter the `sync: false` secret values when prompted.
+2. Enter `IA_AUTH_PASSWORD` when prompted.
 3. Keep the persistent disk mounted at `/app/storage`.
-4. Open `/cortex/` on the Render service URL.
+4. Add optional market data keys later from the service Environment tab.
+5. Open `/cortex/` on the Render service URL.
 
 Required secret:
 
 - `IA_AUTH_PASSWORD`
 
-Market data keys are optional but improve live data coverage:
+Market data keys are optional but improve live data coverage. Add only the keys you actually use in Render's service Environment tab:
 
 - `FINNHUB_API_KEY`
 - `FRED_API_KEY`
